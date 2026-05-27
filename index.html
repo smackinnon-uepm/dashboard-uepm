@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Campañas | UEPM</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #fcfcfc;
+      color: #020001;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: #020001;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f07000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 13px;
+      color: #fcfcfc;
+      flex-shrink: 0;
+      letter-spacing: 0.03em;
+    }
+    .header-title {
+      color: #fcfcfc;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .header-sub {
+      color: #66b1a7;
+      font-size: 0.75rem;
+      margin-top: 1px;
+    }
+    .header-right {
+      text-align: right;
+    }
+    .update-label {
+      color: #66b1a7;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .update-time {
+      color: #00a393;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    /* ── Main ── */
+    .main {
+      padding: 28px 32px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    /* ── Summary bar ── */
+    .summary-bar {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .summary-pill {
+      background: #cce5e1;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 0.8rem;
+      color: #04625c;
+      font-weight: 600;
+    }
+    .summary-pill span {
+      color: #f07000;
+      font-weight: 800;
+      font-size: 1rem;
+      margin-right: 4px;
+    }
+
+    /* ── Grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: #fff;
+      border: 1px solid #cce5e1;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(4, 98, 92, 0.07);
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 20px rgba(4, 98, 92, 0.13);
+    }
+
+    /* Card header */
+    .card-header {
+      background: #04625c;
+      padding: 13px 16px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .campaign-name {
+      color: #fcfcfc;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      line-height: 1.35;
+    }
+    .status-badge {
+      background: #f07000;
+      color: #fcfcfc;
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    /* Ingresos */
+    .ingresos-section {
+      padding: 14px 16px;
+      border-bottom: 1px solid #cce5e1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .section-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #66b1a7;
+    }
+    .ingresos-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .ingresos-number {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: #f07000;
+      line-height: 1;
+    }
+    .ingresos-number.zero {
+      color: #d8eeec;
+    }
+    .new-badge {
+      background: #00ddc8;
+      color: #020001;
+      font-size: 0.6rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 10px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* ACs */
+    .acs-section {
+      padding: 12px 16px;
+      border-bottom: 1px solid #cce5e1;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 9px;
+    }
+    .acs-summary {
+      color: #00a393;
+      font-size: 0.76rem;
+      font-weight: 700;
+    }
+    .ac-list { list-style: none; }
+    .ac-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 6px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+    }
+    .ac-item:nth-child(odd) { background: #f4fbfa; }
+    .ac-name { color: #020001; }
+    .ac-fte {
+      color: #66b1a7;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    /* Gina AI */
+    .gina-section {
+      padding: 12px 16px;
+      border-bottom: 1px solid #cce5e1;
+    }
+    .gina-stats {
+      display: flex;
+      gap: 24px;
+      margin-top: 8px;
+    }
+    .gina-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+    .gina-stat-value {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #00a393;
+      line-height: 1;
+    }
+    .gina-stat-value.zero {
+      color: #d8eeec;
+    }
+    .gina-stat-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #66b1a7;
+    }
+
+    /* Backlog */
+    .backlog-section {
+      padding: 12px 16px;
+      flex: 1;
+    }
+    .backlog-total {
+      color: #04625c;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+    .stage-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 6px;
+      border-radius: 5px;
+      margin-bottom: 2px;
+      font-size: 0.77rem;
+    }
+    .stage-row:nth-child(odd) { background: #f4fbfa; }
+    .stage-name {
+      color: #020001;
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .stage-bar {
+      width: 52px;
+      height: 4px;
+      background: #cce5e1;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .stage-bar-fill {
+      height: 100%;
+      background: #00a393;
+      border-radius: 2px;
+    }
+    .stage-count {
+      font-weight: 800;
+      color: #04625c;
+      min-width: 24px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .stage-row.zero .stage-name { color: #b0d4cf; }
+    .stage-row.zero .stage-bar-fill { background: #e0f0ee; }
+    .stage-row.zero .stage-count { color: #cce5e1; }
+
+    .no-data {
+      color: #b0d4cf;
+      font-size: 0.78rem;
+      font-style: italic;
+      padding: 2px 0;
+    }
+
+    /* ── Error / Loading ── */
+    .loading {
+      text-align: center;
+      padding: 80px 20px;
+      color: #66b1a7;
+      font-size: 0.95rem;
+    }
+    .error-box {
+      background: #fff8f0;
+      border: 1.5px solid #f07000;
+      border-radius: 12px;
+      padding: 24px 28px;
+      max-width: 520px;
+      line-height: 1.7;
+      font-size: 0.9rem;
+    }
+    .error-box strong { color: #f07000; }
+    .error-box code {
+      background: #f0f0f0;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .header { padding: 12px 16px; }
+      .main { padding: 16px; }
+      .grid { grid-template-columns: 1fr; }
+      .summary-bar { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <div class="logo">UEPM</div>
+    <div>
+      <div class="header-title">Dashboard Campañas</div>
+      <div class="header-sub">Campañas activas en proceso</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="update-label">Última actualización</div>
+    <div class="update-time" id="update-time">—</div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="loading" id="loading">Cargando datos...</div>
+  <div id="summary-bar" class="summary-bar" style="display:none"></div>
+  <div class="grid" id="dashboard" style="display:none"></div>
+</main>
+
+<script>
+// Will be overwritten by data.js — acts as fallback if file is missing
+window.DASHBOARD_DATA = undefined;
+window.LAST_UPDATED = undefined;
+</script>
+<script src="data.js" onerror="handleMissingData()"></script>
+<script>
+function handleMissingData() {
+  document.getElementById('loading').innerHTML = `
+    <div class="error-box">
+      <strong>No se encontró data.js</strong><br><br>
+      Para ver el dashboard necesitás generar los datos primero:<br><br>
+      1. Hacé doble clic en <code>iniciar.bat</code><br>
+      2. Esperá a que se descarguen los datos (30-60 seg)<br>
+      3. Recargá esta página (F5)
+    </div>`;
+}
+
+function escHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function renderCard(c) {
+  const hasIngresos = c.ingresos_hoy > 0;
+
+  const acsHtml = c.acs.length > 0
+    ? `<ul class="ac-list">${c.acs.map(ac =>
+        `<li class="ac-item">
+          <span class="ac-name">${escHtml(ac.name)}</span>
+          <span class="ac-fte">${ac.fte}h</span>
+        </li>`
+      ).join('')}</ul>`
+    : '<p class="no-data">Sin ACs asignados</p>';
+
+  const STAGE_ORDER = [
+    'Ingreso del Paciente',
+    'En gestión AC',
+    'Pre Derivado',
+    'Derivado',
+    'Contactado por el Investigador',
+    'Visita Programada',
+    'Visita Cumplida',
+    'Consentimiento Firmado',
+    'Randomizado',
+  ];
+  const maxCount = Math.max(1, ...STAGE_ORDER.map(s => c.backlog[s] || 0));
+  const backlogHtml = STAGE_ORDER.map(stage => {
+    const count = c.backlog[stage] || 0;
+    const pct = Math.round((count / maxCount) * 100);
+    return `<div class="stage-row${count === 0 ? ' zero' : ''}">
+      <span class="stage-name">${escHtml(stage)}</span>
+      <div class="stage-bar"><div class="stage-bar-fill" style="width:${pct}%"></div></div>
+      <span class="stage-count">${count}</span>
+    </div>`;
+  }).join('');
+
+  return `
+    <div class="card">
+      <div class="card-header">
+        <span class="campaign-name">${escHtml(c.name)}</span>
+        <span class="status-badge">En Proceso</span>
+      </div>
+
+      <div class="ingresos-section">
+        <span class="section-label">Ingresos hoy</span>
+        <div class="ingresos-right">
+          ${hasIngresos ? '<span class="new-badge">Nuevo</span>' : ''}
+          <div class="ingresos-number${hasIngresos ? '' : ' zero'}">${c.ingresos_hoy}</div>
+        </div>
+      </div>
+
+      <div class="gina-section">
+        <div class="section-header">
+          <span class="section-label">Gina AI</span>
+        </div>
+        <div class="gina-stats">
+          <div class="gina-stat">
+            <span class="gina-stat-value${c.gina_hoy === 0 ? ' zero' : ''}">${c.gina_hoy}</span>
+            <span class="gina-stat-label">gestiones hoy</span>
+          </div>
+          <div class="gina-stat">
+            <span class="gina-stat-value${c.gina_total === 0 ? ' zero' : ''}">${c.gina_total}</span>
+            <span class="gina-stat-label">acumulado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="acs-section">
+        <div class="section-header">
+          <span class="section-label">Equipo</span>
+          <span class="acs-summary">${c.acs.length} AC${c.acs.length !== 1 ? 's' : ''} · ${c.total_fte}h FTE</span>
+        </div>
+        ${acsHtml}
+      </div>
+
+      <div class="backlog-section">
+        <div class="section-header">
+          <span class="section-label">Backlog</span>
+          <span class="backlog-total">${c.total_backlog} abierto${c.total_backlog !== 1 ? 's' : ''}</span>
+        </div>
+        ${backlogHtml}
+      </div>
+    </div>`;
+}
+
+function scheduleAutoRefresh() {
+  // 7am Argentina = 10am UTC (Argentina is always UTC-3, no DST)
+  const now = new Date();
+  const next = new Date(now);
+  next.setUTCHours(10, 0, 0, 0);
+  if (now >= next) next.setUTCDate(next.getUTCDate() + 1);
+  const ms = next - now;
+  const mins = Math.round(ms / 60000);
+  console.log(`Auto-refresh en ${mins} min (7am Argentina)`);
+  setTimeout(() => location.reload(), ms);
+}
+
+function renderDashboard() {
+  if (typeof window.DASHBOARD_DATA === 'undefined') {
+    handleMissingData();
+    return;
+  }
+
+  document.getElementById('update-time').textContent = window.LAST_UPDATED || '—';
+
+  const data = window.DASHBOARD_DATA;
+  const loading = document.getElementById('loading');
+  const grid = document.getElementById('dashboard');
+  const summaryBar = document.getElementById('summary-bar');
+
+  if (!data || data.length === 0) {
+    loading.innerHTML = '<p style="color:#66b1a7">No se encontraron campañas activas.</p>';
+    return;
+  }
+
+  // Summary totals
+  const totalIngresos = data.reduce((s, c) => s + c.ingresos_hoy, 0);
+  const totalACs = data.reduce((s, c) => s + c.acs.length, 0);
+  const totalBacklog = data.reduce((s, c) => s + c.total_backlog, 0);
+  const totalGinaHoy = data.reduce((s, c) => s + c.gina_hoy, 0);
+
+  summaryBar.innerHTML = `
+    <div class="summary-pill"><span>${data.length}</span> campañas activas</div>
+    <div class="summary-pill"><span>${totalIngresos}</span> ingresos hoy</div>
+    <div class="summary-pill"><span>${totalGinaHoy}</span> gestiones Gina hoy</div>
+    <div class="summary-pill"><span>${totalACs}</span> ACs en total</div>
+    <div class="summary-pill"><span>${totalBacklog}</span> tratos en backlog</div>
+  `;
+
+  grid.innerHTML = data.map(renderCard).join('');
+
+  loading.style.display = 'none';
+  summaryBar.style.display = 'flex';
+  grid.style.display = 'grid';
+
+  scheduleAutoRefresh();
+}
+
+renderDashboard();
+</script>
+
+</body>
+</html>
