@@ -1,4 +1,4 @@
-// Generado: 28/05/2026 12:34 hora Argentina
+// Generado: 28/05/2026 13:27 hora Argentina
 window.DASHBOARD_DATA = [
   {
     "name": "ARG-ALZ-KARUNA-BMS-ADEPT4",
@@ -48,7 +48,7 @@ window.DASHBOARD_DATA = [
       }
     ],
     "total_fte": 24,
-    "ingresos_hoy": 2,
+    "ingresos_hoy": 1,
     "backlog": {
       "En gestión AC": 289,
       "Ingreso del Paciente": 95,
@@ -79,7 +79,7 @@ window.DASHBOARD_DATA = [
       }
     ],
     "total_fte": 22,
-    "ingresos_hoy": 2,
+    "ingresos_hoy": 1,
     "backlog": {
       "Ingreso del Paciente": 294,
       "En gestión AC": 98,
@@ -296,4 +296,4 @@ window.DASHBOARD_DATA = [
     "gina_total": 0
   }
 ];
-window.LAST_UPDATED = "28/05/2026 12:34";
+window.LAST_UPDATED = "28/05/2026 13:27";
