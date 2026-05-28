@@ -20,14 +20,14 @@
       "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 2,
-        "En gestión AC": 73,
+        "En gestión AC": 68,
         "Visita Programada": 5,
+        "Derivado": 6,
         "Consentimiento Firmado": 4,
-        "Contactado por el Investigador": 2,
         "Visita Cumplida": 1,
-        "Derivado": 6
+        "Contactado por el Investigador": 2
       },
-      "total_backlog": 93,
+      "total_backlog": 88,
       "gina_hoy": 0,
       "gina_total": 0,
       "oldest_ingreso": "2026-02-13",
@@ -64,7 +64,7 @@
           105,
           98,
           95,
-          93
+          88
         ],
         "ingresos": [
           5,
@@ -102,20 +102,20 @@
         }
       ],
       "total_fte": 24,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 9,
       "backlog": {
-        "En gestión AC": 284,
-        "Ingreso del Paciente": 95,
-        "Consentimiento Firmado": 5,
-        "Derivado": 9,
-        "Visita Programada": 10,
+        "En gestión AC": 314,
+        "Ingreso del Paciente": 80,
         "Contactado por el Investigador": 17,
-        "Visita Cumplida": 2
+        "Derivado": 12,
+        "Visita Cumplida": 3,
+        "Consentimiento Firmado": 5,
+        "Visita Programada": 11
       },
-      "total_backlog": 422,
-      "gina_hoy": 24,
-      "gina_total": 969,
-      "oldest_ingreso": "2026-05-15",
+      "total_backlog": 442,
+      "gina_hoy": 28,
+      "gina_total": 958,
+      "oldest_ingreso": "2026-05-22",
       "trend": {
         "dates": [
           "14/05",
@@ -136,37 +136,37 @@
         ],
         "backlogs": [
           311,
-          299,
-          322,
-          355,
-          375,
-          370,
-          381,
+          298,
+          316,
+          341,
+          360,
+          357,
+          374,
           379,
-          377,
-          399,
-          421,
-          432,
-          434,
-          427,
-          422
+          385,
+          407,
+          429,
+          440,
+          449,
+          446,
+          442
         ],
         "ingresos": [
-          8,
+          9,
           5,
-          11,
+          12,
+          12,
+          14,
           10,
-          13,
-          5,
-          15,
-          15,
           17,
+          16,
+          18,
           20,
           16,
           22,
-          16,
+          17,
           12,
-          4
+          9
         ]
       }
     },
@@ -187,17 +187,17 @@
         }
       ],
       "total_fte": 22,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 282,
-        "En gestión AC": 101,
+        "En gestión AC": 104,
+        "Derivado": 2,
         "Visita Programada": 1,
-        "Visita Cumplida": 1,
-        "Derivado": 2
+        "Visita Cumplida": 1
       },
-      "total_backlog": 387,
-      "gina_hoy": 4,
-      "gina_total": 178,
+      "total_backlog": 390,
+      "gina_hoy": 5,
+      "gina_total": 179,
       "oldest_ingreso": "2026-04-24",
       "trend": {
         "dates": [
@@ -225,20 +225,20 @@
           388,
           384,
           386,
-          389,
-          385,
           390,
-          396,
-          404,
+          386,
+          391,
+          397,
           405,
-          393,
-          387
+          406,
+          397,
+          390
         ],
         "ingresos": [
           0,
-          2,
+          3,
           0,
-          2,
+          4,
           6,
           2,
           3,
@@ -248,8 +248,8 @@
           2,
           5,
           4,
-          4,
-          2
+          3,
+          3
         ]
       }
     },
@@ -266,20 +266,20 @@
         }
       ],
       "total_fte": 16,
-      "ingresos_hoy": 7,
+      "ingresos_hoy": 8,
       "backlog": {
+        "En gestión AC": 63,
         "Visita Cumplida": 4,
-        "En gestión AC": 62,
-        "Consentimiento Firmado": 3,
         "Contactado por el Investigador": 6,
+        "Consentimiento Firmado": 3,
         "Derivado": 1,
-        "Ingreso del Paciente": 3,
+        "Pre Derivado": 1,
         "Visita Programada": 1
       },
-      "total_backlog": 80,
+      "total_backlog": 79,
       "gina_hoy": 0,
       "gina_total": 0,
-      "oldest_ingreso": "2026-05-28",
+      "oldest_ingreso": null,
       "trend": {
         "dates": [
           "14/05",
@@ -313,7 +313,7 @@
           94,
           84,
           86,
-          80
+          79
         ],
         "ingresos": [
           18,
@@ -330,7 +330,7 @@
           12,
           14,
           17,
-          7
+          8
         ]
       }
     },
@@ -351,12 +351,12 @@
         }
       ],
       "total_fte": 20,
-      "ingresos_hoy": 12,
+      "ingresos_hoy": 14,
       "backlog": {
-        "Ingreso del Paciente": 1,
         "En gestión AC": 128,
-        "Visita Cumplida": 5,
-        "Visita Programada": 10,
+        "Visita Cumplida": 6,
+        "Visita Programada": 9,
+        "Ingreso del Paciente": 1,
         "Contactado por el Investigador": 3
       },
       "total_backlog": 147,
@@ -413,7 +413,7 @@
           22,
           19,
           21,
-          12
+          14
         ]
       }
     },
@@ -432,13 +432,13 @@
       "total_fte": 12,
       "ingresos_hoy": 3,
       "backlog": {
-        "Ingreso del Paciente": 23,
-        "En gestión AC": 33
+        "Ingreso del Paciente": 9,
+        "En gestión AC": 46
       },
-      "total_backlog": 56,
-      "gina_hoy": 6,
-      "gina_total": 116,
-      "oldest_ingreso": "2026-05-23",
+      "total_backlog": 55,
+      "gina_hoy": 7,
+      "gina_total": 117,
+      "oldest_ingreso": "2026-05-24",
       "trend": {
         "dates": [
           "14/05",
@@ -471,8 +471,8 @@
           41,
           49,
           54,
-          57,
-          56
+          58,
+          55
         ],
         "ingresos": [
           0,
@@ -483,7 +483,7 @@
           0,
           0,
           0,
-          5,
+          7,
           8,
           11,
           7,
@@ -516,14 +516,14 @@
       "total_fte": 24,
       "ingresos_hoy": 0,
       "backlog": {
-        "Ingreso del Paciente": 156,
-        "En gestión AC": 80,
-        "Visita Programada": 1,
-        "Derivado": 2,
+        "Ingreso del Paciente": 152,
+        "En gestión AC": 81,
         "Visita Cumplida": 1,
-        "Contactado por el Investigador": 2
+        "Derivado": 2,
+        "Contactado por el Investigador": 2,
+        "Visita Programada": 1
       },
-      "total_backlog": 242,
+      "total_backlog": 239,
       "gina_hoy": 0,
       "gina_total": 26,
       "oldest_ingreso": "2026-03-25",
@@ -560,7 +560,7 @@
           302,
           277,
           260,
-          242
+          239
         ],
         "ingresos": [
           13,
@@ -613,11 +613,11 @@
       "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 5,
+        "Visita Cumplida": 5,
+        "Consentimiento Firmado": 3,
         "En gestión AC": 13,
         "Contactado por el Investigador": 4,
         "Derivado": 5,
-        "Visita Cumplida": 5,
-        "Consentimiento Firmado": 3,
         "Visita Programada": 2
       },
       "total_backlog": 37,
@@ -684,14 +684,18 @@
         {
           "name": "Danaee Quintero",
           "fte": 8
+        },
+        {
+          "name": "Yadira Velasco",
+          "fte": 2
         }
       ],
-      "total_fte": 8,
+      "total_fte": 10,
       "ingresos_hoy": 1,
       "backlog": {
         "En gestión AC": 35,
-        "Consentimiento Firmado": 1,
         "Derivado": 3,
+        "Consentimiento Firmado": 1,
         "Visita Programada": 1
       },
       "total_backlog": 40,
@@ -768,15 +772,15 @@
       "ingresos_hoy": 8,
       "backlog": {
         "Ingreso del Paciente": 27,
-        "Consentimiento Firmado": 4,
-        "Derivado": 10,
-        "En gestión AC": 122,
-        "Pre Derivado": 1,
-        "Contactado por el Investigador": 6,
         "Visita Cumplida": 6,
+        "Derivado": 10,
+        "En gestión AC": 112,
+        "Consentimiento Firmado": 4,
+        "Contactado por el Investigador": 6,
+        "Pre Derivado": 1,
         "Visita Programada": 1
       },
-      "total_backlog": 177,
+      "total_backlog": 167,
       "gina_hoy": 0,
       "gina_total": 0,
       "oldest_ingreso": "2026-02-19",
@@ -813,7 +817,7 @@
           201,
           194,
           176,
-          177
+          167
         ],
         "ingresos": [
           18,
