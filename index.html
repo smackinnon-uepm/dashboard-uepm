@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Campañas | UEPM</title>
+  <style>
+    /* ── Design tokens ──────────────────────────────── */
+    :root {
+      --bg:          #f8fafc;
+      --card:        #ffffff;
+      --border:      #e2e8f0;
+      --border-2:    #cbd5e1;
+      --text:        #0f172a;
+      --text-2:      #64748b;
+      --text-3:      #94a3b8;
+      --header-bg:   #04625c;
+      --orange:      #f07000;
+      --teal-dark:   #04625c;
+      --teal-mid:    #00a393;
+      --teal-light:  #edf7f6;
+      --teal-border: #cce5e1;
+      --total-bg:    #04625c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── Header ─────────────────────────────────────── */
+    .header {
+      background: var(--header-bg);
+      padding: 13px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(0,0,0,0.18);
+    }
+    .header-left { display: flex; align-items: center; gap: 11px; }
+    .logo-img {
+      width: 44px; height: 44px;
+      border-radius: 50%; object-fit: cover; flex-shrink: 0;
+    }
+    .logo-fallback {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--orange);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 10px; color: #fff; flex-shrink: 0;
+      letter-spacing: 0.03em;
+    }
+    .header-title { color: #ffffff; font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; }
+    .header-sub   { color: rgba(255,255,255,0.6); font-size: 0.7rem; margin-top: 1px; }
+    .header-right { text-align: right; }
+    .update-label { color: rgba(255,255,255,0.55); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em; }
+    .update-time  { color: #ffffff; font-size: 0.8rem; font-weight: 600; margin-top: 2px; }
+
+    /* ── Main ───────────────────────────────────────── */
+    .main { padding: 22px 28px; max-width: 1440px; margin: 0 auto; }
+
+    /* ── Summary bar ────────────────────────────────── */
+    .summary-bar { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+    .summary-pill {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 6px; padding: 5px 13px;
+      font-size: 0.76rem; color: var(--text-2); font-weight: 500;
+    }
+    .summary-pill span { color: var(--orange); font-weight: 800; font-size: 0.88rem; margin-right: 4px; }
+
+    /* ── Date nav ───────────────────────────────────── */
+    .date-nav {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 7px; padding: 6px 12px; width: fit-content;
+    }
+    .date-nav-btn {
+      background: none; border: none; cursor: pointer; color: var(--teal-dark);
+      font-size: 1rem; font-weight: 700; padding: 3px 8px; border-radius: 4px;
+      transition: background 0.15s;
+    }
+    .date-nav-btn:hover:not(:disabled) { background: var(--teal-light); }
+    .date-nav-btn:disabled { color: var(--border-2); cursor: default; }
+    .date-nav-center { display: flex; align-items: center; gap: 7px; min-width: 105px; justify-content: center; }
+    #dnav-date { font-weight: 700; font-size: 0.86rem; color: var(--teal-dark); }
+    .date-today-badge {
+      background: var(--orange); color: #fff;
+      font-size: 0.57rem; font-weight: 800; padding: 2px 6px;
+      border-radius: 8px; letter-spacing: 0.04em; text-transform: uppercase;
+    }
+
+    /* ── Cards grid (1 col, full-width horizontal) ── */
+    .grid { display: flex; flex-direction: column; gap: 10px; }
+
+    /* ── Card base ──────────────────────────────────── */
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: box-shadow 0.18s;
+    }
+    .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.09); }
+
+    /* Card header */
+    .card-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 16px; border-bottom: 1px solid var(--border); gap: 12px;
+    }
+    .campaign-name { font-size: 0.86rem; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
+    .status-badge {
+      font-size: 0.6rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;
+      white-space: nowrap; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.05em;
+      border: 1px solid var(--border-2); color: var(--text-3);
+    }
+
+    /* Card body: 4 columns */
+    .card-body {
+      display: grid;
+      grid-template-columns: 100px 120px 180px 1fr;
+    }
+    .card-col {
+      padding: 12px 14px;
+      border-right: 1px solid var(--border);
+    }
+    .card-col:last-child { border-right: none; }
+
+    .col-label {
+      font-size: 0.6rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.09em; color: var(--text-3); margin-bottom: 7px;
+    }
+
+    /* Ingresos column */
+    .metric-big { font-size: 2.2rem; font-weight: 900; line-height: 1; color: var(--orange); }
+    .metric-big.zero { color: var(--border-2); }
+    .metric-sub { font-size: 0.68rem; color: var(--text-3); margin-top: 3px; }
+
+    /* Gina column */
+    .gina-pair { display: flex; gap: 18px; margin-top: 2px; }
+    .gina-num  { font-size: 1.25rem; font-weight: 800; line-height: 1; color: var(--teal-mid); }
+    .gina-num.zero { color: var(--border-2); }
+    .gina-sub  { font-size: 0.63rem; color: var(--text-3); margin-top: 2px; }
+
+    /* Team column */
+    .team-head { font-size: 0.73rem; color: var(--teal-dark); font-weight: 700; margin-bottom: 5px; }
+    .ac-list   { list-style: none; }
+    .ac-item   { display: flex; align-items: center; gap: 5px; padding: 1.5px 0; font-size: 0.76rem; }
+    .ac-name   { color: var(--text-2); }
+    .ac-fte    { color: var(--text-3); font-size: 0.7rem; font-weight: 600; white-space: nowrap; }
+    .no-data   { color: var(--text-3); font-size: 0.73rem; font-style: italic; }
+
+    /* Trend column */
+    .trend-block { display: flex; flex-direction: column; gap: 10px; }
+    .trend-item  { display: flex; flex-direction: column; gap: 3px; }
+    .trend-lbl   {
+      font-size: 0.6rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.07em; color: var(--text-3);
+    }
+    .trend-empty { font-size: 0.7rem; color: var(--text-3); font-style: italic; margin-top: 6px; }
+
+    /* Sparkline bars */
+    .schart  { display: flex; flex-direction: column; gap: 2px; }
+    .sbars   { display: flex; align-items: flex-end; gap: 2px; height: 48px; }
+    .sbar    {
+      flex: 1; border-radius: 2px 2px 0 0; min-height: 3px;
+      position: relative; cursor: default;
+      transition: filter 0.1s;
+    }
+    .sbar:hover { filter: brightness(1.25); }
+    .stip {
+      display: none;
+      position: absolute; bottom: calc(100% + 6px); left: 50%;
+      transform: translateX(-50%);
+      background: #0f172a; color: #fff;
+      font-size: 0.65rem; font-weight: 600;
+      padding: 4px 8px; border-radius: 5px;
+      white-space: nowrap; z-index: 100;
+      text-align: center; line-height: 1.5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      pointer-events: none;
+    }
+    .stip::after {
+      content: ''; position: absolute; top: 100%; left: 50%;
+      transform: translateX(-50%);
+      border: 4px solid transparent; border-top-color: #0f172a;
+    }
+    .sbar:hover .stip { display: block; }
+    .sdates { display: flex; margin-top: 1px; }
+    .sdl    { flex: 1; font-size: 0.55rem; color: var(--text-3); text-align: center; overflow: hidden; }
+
+    /* Backlog row */
+    .card-backlog { padding: 9px 16px; border-top: 1px solid var(--border); }
+    .backlog-meta {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 7px;
+    }
+    .backlog-total { font-size: 0.7rem; font-weight: 700; color: var(--teal-dark); }
+    .backlog-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 5px; padding: 3px 9px; font-size: 0.71rem;
+    }
+    .chip.zero { opacity: 0.4; }
+    .chip-name  { color: var(--text-2); }
+    .chip-count { font-weight: 800; color: var(--teal-dark); }
+    .chip-since {
+      font-size: 0.6rem; color: var(--orange); font-weight: 700;
+      padding-left: 5px; border-left: 1px solid var(--border-2); white-space: nowrap;
+    }
+
+    /* ── Total card (special styling) ───────────────── */
+    .card-total { border-color: var(--teal-dark); }
+    .card-total .card-header { background: var(--total-bg); border-bottom-color: rgba(255,255,255,0.12); }
+    .card-total .campaign-name { color: #fff; }
+    .card-total .status-badge  { border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.55); }
+    .card-total .card-body     { background: var(--teal-light); }
+    .card-total .card-col      { border-right-color: var(--teal-border); }
+    .card-total .card-backlog  { background: var(--teal-light); border-top-color: var(--teal-border); }
+    .card-total .chip          { background: #fff; border-color: var(--teal-border); }
+    .card-total .backlog-total { color: var(--teal-dark); }
+
+    /* ── Loading / Error ─────────────────────────────── */
+    .loading { text-align: center; padding: 60px 20px; color: var(--text-3); font-size: 0.88rem; }
+    .error-box {
+      background: #fff; border: 1.5px solid var(--orange); border-radius: 10px;
+      padding: 22px 26px; max-width: 490px; line-height: 1.7; font-size: 0.86rem;
+    }
+    .error-box strong { color: var(--orange); }
+    .error-box code   { background: var(--bg); padding: 1px 5px; border-radius: 3px; font-size: 0.82rem; }
+
+    /* ── Responsive ─────────────────────────────────── */
+    @media (max-width: 960px) {
+      .card-body { grid-template-columns: 1fr 1fr; }
+      .card-col:nth-child(2) { border-right: none; }
+      .card-col:nth-child(3),
+      .card-col:nth-child(4) { border-top: 1px solid var(--border); }
+      .card-col:nth-child(4) { border-right: none; }
+    }
+    @media (max-width: 580px) {
+      .main { padding: 12px 14px; }
+      .header { padding: 11px 14px; }
+      .card-body { grid-template-columns: 1fr; }
+      .card-col { border-right: none !important; }
+      .card-col + .card-col { border-top: 1px solid var(--border); }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <img src="logo.png" class="logo-img" alt="UEPM"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-fallback" style="display:none">UEPM</div>
+    <div>
+      <div class="header-title">Dashboard de campañas activas</div>
+      <div class="header-sub">Ingresos diarios, tratos en el backlog, tratos gestionados por Gina y equipo por campaña</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="update-label">Última actualización</div>
+    <div class="update-time" id="update-time">—</div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="loading" id="loading">Cargando datos...</div>
+  <div id="date-nav" class="date-nav" style="display:none">
+    <button class="date-nav-btn" id="dnav-prev" onclick="navigateDate(1)">&#8592;</button>
+    <div class="date-nav-center">
+      <span id="dnav-date">—</span>
+      <span id="dnav-today" class="date-today-badge">hoy</span>
+    </div>
+    <button class="date-nav-btn" id="dnav-next" onclick="navigateDate(-1)">&#8594;</button>
+  </div>
+  <div class="grid" id="dashboard" style="display:none"></div>
+</main>
+
+<script>
+window.DASHBOARD_DATA = undefined;
+window.LAST_UPDATED   = undefined;
+</script>
+<script src="data.js" onerror="handleMissingData()"></script>
+<script>
+
+// ── Constants ─────────────────────────────────────────────────
+const STAGE_ORDER = [
+  'Ingreso del Paciente','En gestión AC','Pre Derivado','Derivado',
+  'Contactado por el Investigador','Visita Programada','Visita Cumplida',
+  'Consentimiento Firmado','Randomizado',
+];
+
+// ── History state ─────────────────────────────────────────────
+let _histDates = [];   // sorted desc ["2026-05-28", ...]
+let _histData  = {};   // { "2026-05-28": [...] }
+let _currIdx   = 0;
+
+// ── Utilities ─────────────────────────────────────────────────
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function fmtDate(s) {
+  const [y, m, d] = s.split('-');
+  return `${d}/${m}/${y}`;
+}
+
+function spark(values, fmtDates, color) {
+  if (!values || !values.length) return '';
+  const max   = Math.max(...values, 1);
+  const n     = values.length;
+  const every = n <= 5 ? 1 : n <= 10 ? 2 : 3;
+
+  const bars = values.map((v, i) => {
+    const pct  = Math.max(4, Math.round((v / max) * 100));
+    const date = (fmtDates && fmtDates[i]) ? fmtDates[i].slice(0, 5) : `d${i + 1}`;
+    return `<div class="sbar" style="height:${pct}%;background:${color}">
+      <div class="stip">${date}<br><strong>${v}</strong></div>
+    </div>`;
+  }).join('');
+
+  const labels = values.map((_, i) => {
+    const txt = (i % every === 0 && fmtDates && fmtDates[i]) ? fmtDates[i].slice(0, 5) : '';
+    return `<span class="sdl">${txt}</span>`;
+  }).join('');
+
+  return `<div class="schart"><div class="sbars">${bars}</div><div class="sdates">${labels}</div></div>`;
+}
+
+// ── Trend builders ────────────────────────────────────────────
+function trendForCampaign(c) {
+  // Prioridad 1: trend precalculado en data.js desde el sheet real
+  if (c.trend && c.trend.backlogs && c.trend.backlogs.length > 0) {
+    return { fmtDates: c.trend.dates, backlogs: c.trend.backlogs, ingresos: c.trend.ingresos };
+  }
+  // Fallback: history.json acumulado
+  if (_histDates.length === 0) return null;
+  const end   = _currIdx;
+  const start = Math.min(_histDates.length - 1, _currIdx + 14);
+  const dates = _histDates.slice(end, start + 1).reverse();
+  return {
+    fmtDates: dates.map(d => fmtDate(d)),
+    backlogs: dates.map(d => { const f = (_histData[d]||[]).find(x=>x.name===c.name); return f?f.total_backlog:0; }),
+    ingresos: dates.map(d => { const f = (_histData[d]||[]).find(x=>x.name===c.name); return f?f.ingresos_hoy:0;  }),
+  };
+}
+
+function trendForTotal(data) {
+  // Agregar trends de todas las campañas
+  const first = data.find(c => c.trend && c.trend.backlogs && c.trend.backlogs.length > 0);
+  if (first) {
+    const n = first.trend.backlogs.length;
+    return {
+      dates:    first.trend.dates,
+      backlogs: Array.from({length: n}, (_, i) => data.reduce((s, c) => s + (c.trend?.backlogs[i] || 0), 0)),
+      ingresos: Array.from({length: n}, (_, i) => data.reduce((s, c) => s + (c.trend?.ingresos[i] || 0), 0)),
+    };
+  }
+  if (_histDates.length === 0) return null;
+  const end   = _currIdx;
+  const start = Math.min(_histDates.length - 1, _currIdx + 14);
+  const dates = _histDates.slice(end, start + 1).reverse();
+  return {
+    dates:    dates.map(d => fmtDate(d)),
+    backlogs: dates.map(d => (_histData[d]||[]).reduce((s,c)=>s+c.total_backlog,0)),
+    ingresos: dates.map(d => (_histData[d]||[]).reduce((s,c)=>s+c.ingresos_hoy,0)),
+  };
+}
+
+// ── Card renderer ─────────────────────────────────────────────
+function renderCard(c, isTotal) {
+  const t = trendForCampaign(c);
+
+  // Team column
+  let teamHtml;
+  if (isTotal) {
+    teamHtml = `<div class="team-head">${c._camps} campañas · ${c._acs} ACs</div>
+                <div class="ac-item"><span class="ac-name">FTE total</span><span class="ac-fte">${c.total_fte}h</span></div>`;
+  } else if (c.acs.length > 0) {
+    teamHtml = `<div class="team-head">${c.acs.length} AC${c.acs.length !== 1 ? 's' : ''} · ${c.total_fte}h FTE</div>
+                <ul class="ac-list">${c.acs.map(a =>
+                  `<li class="ac-item"><span class="ac-name">${esc(a.name)}</span><span class="ac-fte">· ${a.fte}h</span></li>`
+                ).join('')}</ul>`;
+  } else {
+    teamHtml = `<p class="no-data">Sin ACs asignados</p>`;
+  }
+
+  // Trend column
+  const trendHtml = t
+    ? `<div class="trend-block">
+         <div class="trend-item">
+           <div class="trend-lbl">Ingresos</div>
+           ${spark(t.ingresos, t.fmtDates, 'var(--orange)')}
+         </div>
+         <div class="trend-item">
+           <div class="trend-lbl">Backlog</div>
+           ${spark(t.backlogs, t.fmtDates, 'var(--teal-mid)')}
+         </div>
+       </div>`
+    : `<p class="trend-empty">Sin datos históricos aún</p>`;
+
+  // Backlog chips
+  const chips = STAGE_ORDER.map(stage => {
+    const n = c.backlog[stage] || 0;
+    let since = '';
+    if (stage === 'Ingreso del Paciente' && n > 0 && c.oldest_ingreso) {
+      const [y, mo, d] = c.oldest_ingreso.split('-');
+      since = `<span class="chip-since">desde ${d}/${mo}/${y}</span>`;
+    }
+    return `<div class="chip${n === 0 ? ' zero' : ''}">
+      <span class="chip-name">${esc(stage)}</span>
+      <span class="chip-count">${n}</span>
+      ${since}
+    </div>`;
+  }).join('');
+
+  return `
+    <div class="card${isTotal ? ' card-total' : ''}">
+      <div class="card-header">
+        <span class="campaign-name">${esc(c.name)}</span>
+        <span class="status-badge">${isTotal ? 'Total' : 'En proceso'}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-col">
+          <div class="col-label">Ingresos del día</div>
+          <div class="metric-big${c.ingresos_hoy === 0 ? ' zero' : ''}">${c.ingresos_hoy}</div>
+          <div class="metric-sub">${c.ingresos_hoy === 1 ? 'paciente' : 'pacientes'}</div>
+          <div class="metric-big${c.total_backlog === 0 ? ' zero' : ''}" style="color:var(--teal-mid);margin-top:10px">${c.total_backlog}</div>
+          <div class="metric-sub">backlog</div>
+        </div>
+        <div class="card-col">
+          <div class="col-label">Gina AI</div>
+          <div class="gina-pair">
+            <div>
+              <div class="gina-num${c.gina_hoy === 0 ? ' zero' : ''}">${c.gina_hoy}</div>
+              <div class="gina-sub">del día</div>
+            </div>
+            <div>
+              <div class="gina-num${c.gina_total === 0 ? ' zero' : ''}">${c.gina_total}</div>
+              <div class="gina-sub">acum.</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-col">
+          <div class="col-label">Equipo</div>
+          ${teamHtml}
+        </div>
+        <div class="card-col">
+          <div class="col-label">Últimos 15 días</div>
+          ${trendHtml}
+        </div>
+      </div>
+      <div class="card-backlog">
+        <div class="backlog-meta">
+          <span class="col-label" style="margin:0">Backlog</span>
+          <span class="backlog-total">${c.total_backlog} abierto${c.total_backlog !== 1 ? 's' : ''}</span>
+        </div>
+        <div class="backlog-chips">${chips}</div>
+      </div>
+    </div>`;
+}
+
+// ── Paint ─────────────────────────────────────────────────────
+function paintCards(data) {
+  const loading = document.getElementById('loading');
+  const grid    = document.getElementById('dashboard');
+
+  if (!data || data.length === 0) {
+    loading.innerHTML     = '<p style="color:var(--text-3)">No se encontraron campañas activas para esta fecha.</p>';
+    loading.style.display = '';
+    grid.style.display    = 'none';
+    return;
+  }
+
+  const tI = data.reduce((s, c) => s + c.ingresos_hoy, 0);
+  const tA = new Set(data.flatMap(c => c.acs.map(a => a.name))).size;
+  const tB = data.reduce((s, c) => s + c.total_backlog,   0);
+  const tG = data.reduce((s, c) => s + (c.gina_hoy || 0), 0);
+
+  // Total card
+  const totalBacklog = {};
+  for (const c of data) {
+    for (const [st, n] of Object.entries(c.backlog || {}))
+      totalBacklog[st] = (totalBacklog[st] || 0) + n;
+  }
+  const totalCard = {
+    name:           '— Total de todas las campañas',
+    _camps:         data.length,
+    _acs:           tA,
+    acs:            [],
+    total_fte:      data.reduce((s, c) => s + c.total_fte,        0),
+    ingresos_hoy:   tI,
+    backlog:        totalBacklog,
+    total_backlog:  tB,
+    gina_hoy:       tG,
+    gina_total:     data.reduce((s, c) => s + (c.gina_total || 0), 0),
+    oldest_ingreso: data.map(c => c.oldest_ingreso).filter(Boolean).sort()[0] || null,
+    trend:          trendForTotal(data),
+  };
+
+  grid.innerHTML =
+    renderCard(totalCard, true) +
+    data.map(c => renderCard(c, false)).join('');
+
+  loading.style.display = 'none';
+  grid.style.display    = 'flex';
+}
+
+// ── Date nav ──────────────────────────────────────────────────
+function refreshDateNav() {
+  const nav = document.getElementById('date-nav');
+  if (_histDates.length === 0) { nav.style.display = 'none'; return; }
+  document.getElementById('dnav-date').textContent    = fmtDate(_histDates[_currIdx]);
+  document.getElementById('dnav-today').style.display = _currIdx === 0 ? 'inline' : 'none';
+  document.getElementById('dnav-prev').disabled       = _currIdx >= _histDates.length - 1;
+  document.getElementById('dnav-next').disabled       = _currIdx <= 0;
+  nav.style.display = 'flex';
+}
+
+function navigateDate(delta) {
+  const next = _currIdx + delta;
+  if (next < 0 || next >= _histDates.length) return;
+  _currIdx = next;
+  refreshDateNav();
+  paintCards(_histData[_histDates[_currIdx]]);
+}
+
+// ── History loader ────────────────────────────────────────────
+function todayKeyFromLastUpdated() {
+  if (!window.LAST_UPDATED) return new Date(Date.now() - 3*60*60*1000).toISOString().slice(0,10);
+  const m = window.LAST_UPDATED.match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+  return m ? `${m[3]}-${m[2]}-${m[1]}` : new Date(Date.now() - 3*60*60*1000).toISOString().slice(0,10);
+}
+
+async function loadHistory() {
+  try {
+    const r = await fetch('history.json');
+    if (!r.ok) throw new Error('no history');
+    _histData  = await r.json();
+    _histDates = Object.keys(_histData).sort().reverse();
+    if (_histDates.length === 0) throw new Error('empty');
+    _currIdx = 0;
+    refreshDateNav();
+    paintCards(_histData[_histDates[0]]);
+  } catch (_) {
+    // Sin history.json: el dashboard ya muestra los datos reales de data.js
+    // (la tendencia viene del campo c.trend calculado desde el sheet)
+  }
+}
+
+// ── Auto-refresh ──────────────────────────────────────────────
+function scheduleAutoRefresh() {
+  const now  = new Date();
+  const next = new Date(now);
+  next.setUTCHours(10, 0, 0, 0);
+  if (now >= next) next.setUTCDate(next.getUTCDate() + 1);
+  console.log(`Auto-refresh en ${Math.round((next - now) / 60000)} min (7am ARG)`);
+  setTimeout(() => location.reload(), next - now);
+}
+
+// ── Error ─────────────────────────────────────────────────────
+function handleMissingData() {
+  document.getElementById('loading').innerHTML = `
+    <div class="error-box">
+      <strong>No se encontró data.js</strong><br><br>
+      Para ver el dashboard necesitás generar los datos primero:<br><br>
+      1. Hacé doble clic en <code>iniciar.bat</code><br>
+      2. Esperá a que terminen los datos (30-60 seg)<br>
+      3. Recargá esta página (F5)
+    </div>`;
+}
+
+// ── Entry point ───────────────────────────────────────────────
+function renderDashboard() {
+  if (typeof window.DASHBOARD_DATA === 'undefined') {
+    handleMissingData();
+    return;
+  }
+  document.getElementById('update-time').textContent = window.LAST_UPDATED || '—';
+  paintCards(window.DASHBOARD_DATA);
+  loadHistory();
+  scheduleAutoRefresh();
+}
+
+renderDashboard();
+</script>
+
+</body>
+</html>
