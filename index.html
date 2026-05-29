@@ -332,13 +332,19 @@ function fmtDate(s) {
   return `${d}/${m}/${y}`;
 }
 
-// "2026-05-28" → "Lun 28/05"
+// "2026-05-28" → "Lun 28/05"  |  fallback: "28/05" → "28/05" (datos viejos)
 function isoToLabel(iso) {
   if (!iso) return '';
-  const ds = ['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
-  const [y, m, d] = iso.split('-');
-  const dt = new Date(Date.UTC(+y, +m - 1, +d));
-  return ds[dt.getUTCDay()] + ' ' + d + '/' + m;
+  if (iso.includes('-')) {
+    // Formato nuevo: yyyy-MM-dd
+    const ds = ['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
+    const [y, m, d] = iso.split('-');
+    const dt = new Date(Date.UTC(+y, +m - 1, +d));
+    if (isNaN(dt.getTime())) return iso.slice(0, 5);
+    return ds[dt.getUTCDay()] + ' ' + d + '/' + m;
+  }
+  // Formato viejo: dd/MM — devolver tal cual
+  return iso.slice(0, 5);
 }
 
 function avg(arr) {
