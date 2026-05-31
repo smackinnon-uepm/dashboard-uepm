@@ -1,4 +1,4 @@
-// Generado: 31/05/2026 05:10 hora Argentina
+// Generado: 31/05/2026 11:10 hora Argentina
 window.DASHBOARD_DATA = [
   {
     "name": "ARG-ALZ-KARUNA-BMS-ADEPT4",
@@ -18,19 +18,19 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 18,
     "fte_persons": 2.25,
-    "ingresos_hoy": 3,
+    "ingresos_hoy": 4,
     "backlog": {
-      "Ingreso del Paciente": 5,
+      "Ingreso del Paciente": 6,
       "En gestión AC": 58,
+      "Visita Programada": 4,
+      "Derivado": 2,
+      "Contactado por el Investigador": 5,
       "Consentimiento Firmado": 4,
       "Visita Cumplida": 1,
-      "Contactado por el Investigador": 5,
-      "Derivado": 2,
       "Randomizado": 1,
-      "Visita Programada": 4,
       "Pre Derivado": 1
     },
-    "total_backlog": 5,
+    "total_backlog": 6,
     "total_wip": 75,
     "gina_hoy": 0,
     "gina_total": 0,
@@ -71,7 +71,7 @@ window.DASHBOARD_DATA = [
         0,
         1,
         2,
-        5
+        6
       ],
       "wip": [
         99,
@@ -105,7 +105,7 @@ window.DASHBOARD_DATA = [
         10,
         5,
         1,
-        3
+        4
       ]
     }
   },
@@ -127,21 +127,21 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 24,
     "fte_persons": 3,
-    "ingresos_hoy": 2,
+    "ingresos_hoy": 8,
     "backlog": {
       "En gestión AC": 298,
-      "Ingreso del Paciente": 132,
+      "Ingreso del Paciente": 137,
       "Contactado por el Investigador": 17,
+      "Consentimiento Firmado": 6,
       "Derivado": 13,
       "Visita Programada": 12,
       "Visita Cumplida": 2,
-      "Consentimiento Firmado": 6,
       "Randomizado": 3
     },
-    "total_backlog": 132,
+    "total_backlog": 137,
     "total_wip": 348,
-    "gina_hoy": 3,
-    "gina_total": 1095,
+    "gina_hoy": 14,
+    "gina_total": 1106,
     "gina_perdidos": 125,
     "gina_gestionados": 23,
     "avg_days_process": 10.2,
@@ -177,9 +177,9 @@ window.DASHBOARD_DATA = [
         41,
         46,
         67,
-        96,
-        129,
-        132
+        93,
+        125,
+        137
       ],
       "wip": [
         339,
@@ -194,8 +194,8 @@ window.DASHBOARD_DATA = [
         410,
         402,
         379,
-        361,
-        348,
+        364,
+        352,
         348
       ],
       "ingresos": [
@@ -213,7 +213,7 @@ window.DASHBOARD_DATA = [
         20,
         26,
         24,
-        2
+        8
       ]
     }
   },
@@ -235,20 +235,20 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 22,
     "fte_persons": 2.75,
-    "ingresos_hoy": 1,
+    "ingresos_hoy": 2,
     "backlog": {
-      "Ingreso del Paciente": 280,
+      "Ingreso del Paciente": 281,
       "En gestión AC": 96,
-      "Derivado": 1,
-      "Contactado por el Investigador": 1,
       "Visita Cumplida": 1,
-      "Pre Derivado": 1,
-      "Visita Programada": 1
+      "Contactado por el Investigador": 1,
+      "Visita Programada": 1,
+      "Derivado": 1,
+      "Pre Derivado": 1
     },
-    "total_backlog": 280,
+    "total_backlog": 281,
     "total_wip": 101,
-    "gina_hoy": 2,
-    "gina_total": 202,
+    "gina_hoy": 5,
+    "gina_total": 205,
     "gina_perdidos": 0,
     "gina_gestionados": 1,
     "avg_days_process": 10.2,
@@ -286,7 +286,7 @@ window.DASHBOARD_DATA = [
         269,
         270,
         279,
-        280
+        281
       ],
       "wip": [
         121,
@@ -320,7 +320,7 @@ window.DASHBOARD_DATA = [
         3,
         2,
         9,
-        1
+        2
       ]
     }
   },
@@ -338,18 +338,18 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 16,
     "fte_persons": 2,
-    "ingresos_hoy": 6,
+    "ingresos_hoy": 9,
     "backlog": {
-      "Ingreso del Paciente": 25,
+      "Ingreso del Paciente": 28,
       "En gestión AC": 52,
       "Visita Cumplida": 4,
-      "Contactado por el Investigador": 6,
       "Consentimiento Firmado": 2,
+      "Contactado por el Investigador": 6,
       "Derivado": 2,
       "Visita Programada": 1,
       "Randomizado": 2
     },
-    "total_backlog": 25,
+    "total_backlog": 28,
     "total_wip": 67,
     "gina_hoy": 0,
     "gina_total": 0,
@@ -390,7 +390,7 @@ window.DASHBOARD_DATA = [
         0,
         0,
         19,
-        25
+        28
       ],
       "wip": [
         107,
@@ -424,7 +424,7 @@ window.DASHBOARD_DATA = [
         10,
         10,
         19,
-        6
+        9
       ]
     }
   },
@@ -650,9 +650,9 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 16,
     "fte_persons": 2,
-    "ingresos_hoy": 5,
+    "ingresos_hoy": 9,
     "backlog": {
-      "Ingreso del Paciente": 41,
+      "Ingreso del Paciente": 45,
       "En gestión AC": 98,
       "Visita Cumplida": 6,
       "Visita Programada": 5,
@@ -660,7 +660,7 @@ window.DASHBOARD_DATA = [
       "Consentimiento Firmado": 2,
       "Contactado por el Investigador": 3
     },
-    "total_backlog": 41,
+    "total_backlog": 45,
     "total_wip": 115,
     "gina_hoy": 0,
     "gina_total": 0,
@@ -701,7 +701,7 @@ window.DASHBOARD_DATA = [
         0,
         10,
         36,
-        41
+        45
       ],
       "wip": [
         257,
@@ -735,7 +735,7 @@ window.DASHBOARD_DATA = [
         21,
         21,
         26,
-        5
+        9
       ]
     }
   },
@@ -832,15 +832,15 @@ window.DASHBOARD_DATA = [
     "acs": [],
     "total_fte": 0,
     "fte_persons": 0,
-    "ingresos_hoy": 2,
+    "ingresos_hoy": 3,
     "backlog": {
-      "Ingreso del Paciente": 21,
+      "Ingreso del Paciente": 22,
       "En gestión AC": 2
     },
-    "total_backlog": 21,
+    "total_backlog": 22,
     "total_wip": 2,
-    "gina_hoy": 2,
-    "gina_total": 20,
+    "gina_hoy": 3,
+    "gina_total": 21,
     "gina_perdidos": 0,
     "gina_gestionados": 0,
     "avg_days_process": null,
@@ -878,7 +878,7 @@ window.DASHBOARD_DATA = [
         1,
         9,
         19,
-        21
+        22
       ],
       "wip": [
         0,
@@ -910,9 +910,9 @@ window.DASHBOARD_DATA = [
         0,
         1,
         0,
-        7,
+        8,
         10,
-        2
+        3
       ]
     }
   },
@@ -930,17 +930,17 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 12,
     "fte_persons": 1.5,
-    "ingresos_hoy": 4,
+    "ingresos_hoy": 6,
     "backlog": {
-      "Ingreso del Paciente": 18,
+      "Ingreso del Paciente": 20,
       "En gestión AC": 48,
-      "Visita Programada": 1,
-      "Derivado": 2
+      "Derivado": 2,
+      "Visita Programada": 1
     },
-    "total_backlog": 18,
+    "total_backlog": 20,
     "total_wip": 51,
-    "gina_hoy": 7,
-    "gina_total": 161,
+    "gina_hoy": 10,
+    "gina_total": 164,
     "gina_perdidos": 0,
     "gina_gestionados": 1,
     "avg_days_process": 2.8,
@@ -977,8 +977,8 @@ window.DASHBOARD_DATA = [
         0,
         0,
         2,
-        13,
-        18
+        12,
+        20
       ],
       "wip": [
         4,
@@ -994,7 +994,7 @@ window.DASHBOARD_DATA = [
         57,
         53,
         54,
-        51,
+        52,
         51
       ],
       "ingresos": [
@@ -1011,8 +1011,8 @@ window.DASHBOARD_DATA = [
         4,
         5,
         7,
-        7,
-        4
+        8,
+        6
       ]
     }
   },
@@ -1160,11 +1160,11 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "En gestión AC": 16,
       "Ingreso del Paciente": 6,
-      "Contactado por el Investigador": 4,
       "Visita Cumplida": 5,
+      "Contactado por el Investigador": 4,
+      "Visita Programada": 2,
       "Derivado": 5,
       "Randomizado": 2,
-      "Visita Programada": 2,
       "Consentimiento Firmado": 4
     },
     "total_backlog": 6,
@@ -1260,15 +1260,15 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 12,
     "fte_persons": 1.5,
-    "ingresos_hoy": 3,
+    "ingresos_hoy": 6,
     "backlog": {
-      "Ingreso del Paciente": 18,
+      "Ingreso del Paciente": 23,
       "En gestión AC": 5
     },
-    "total_backlog": 18,
+    "total_backlog": 23,
     "total_wip": 5,
-    "gina_hoy": 5,
-    "gina_total": 39,
+    "gina_hoy": 10,
+    "gina_total": 44,
     "gina_perdidos": 0,
     "gina_gestionados": 0,
     "avg_days_process": 0.2,
@@ -1306,7 +1306,7 @@ window.DASHBOARD_DATA = [
         0,
         8,
         15,
-        18
+        23
       ],
       "wip": [
         0,
@@ -1340,7 +1340,7 @@ window.DASHBOARD_DATA = [
         0,
         1,
         6,
-        3
+        6
       ]
     }
   },
@@ -1362,8 +1362,8 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "Ingreso del Paciente": 7,
       "En gestión AC": 30,
-      "Consentimiento Firmado": 2,
-      "Derivado": 3
+      "Derivado": 3,
+      "Consentimiento Firmado": 2
     },
     "total_backlog": 7,
     "total_wip": 35,
@@ -1461,13 +1461,13 @@ window.DASHBOARD_DATA = [
     "ingresos_hoy": 4,
     "backlog": {
       "Ingreso del Paciente": 30,
+      "Derivado": 7,
       "Contactado por el Investigador": 8,
       "En gestión AC": 112,
       "Visita Cumplida": 6,
       "Visita Programada": 3,
-      "Randomizado": 2,
-      "Derivado": 7,
       "Consentimiento Firmado": 4,
+      "Randomizado": 2,
       "Pre Derivado": 1
     },
     "total_backlog": 30,
@@ -1550,4 +1550,4 @@ window.DASHBOARD_DATA = [
     }
   }
 ];
-window.LAST_UPDATED = "31/05/2026 05:10";
+window.LAST_UPDATED = "31/05/2026 11:10";
