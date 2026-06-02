@@ -451,7 +451,7 @@ function renderCard(c, isTotal) {
         </div>
         <div>
           <div class="gina-num${c.gina_total === 0 ? ' zero' : ''}">${c.gina_total}</div>
-          <div class="gina-sub">acum.</div>
+          <div class="gina-sub">totales</div>
         </div>
         <div>
           <div class="gina-num${(c.gina_perdidos||0) === 0 ? ' zero' : ''}">${c.gina_perdidos||0}</div>
@@ -470,17 +470,18 @@ function renderCard(c, isTotal) {
     teamInner = `<div class="team-head">${c._camps} campañas · ${c._acs} ACs</div>
       <div class="ac-item"><span class="ac-name">FTE total</span><span class="ac-fte">${c.total_fte}h</span></div>`;
   } else if (c.acs.length > 0) {
-    const persons = c.fte_persons || 0;
-    const ratio   = persons > 0 ? (c.ingresos_hoy / persons).toFixed(1) : '–';
-    const avgD    = c.avg_days_process != null ? c.avg_days_process + ' días' : '–';
+    const persons  = c.fte_persons || 0;
+    const avgIng15 = t && t.ingresos && t.ingresos.length ? avg(t.ingresos) : c.ingresos_hoy;
+    const ratio    = persons > 0 ? (avgIng15 / persons).toFixed(1) : '–';
+    const avgD     = c.avg_days_process != null ? c.avg_days_process + ' días' : '–';
     teamInner = `<div class="team-head">${c.acs.length} AC${c.acs.length !== 1 ? 's' : ''} · ${c.total_fte}h FTE</div>
       <ul class="ac-list">${c.acs.map(a =>
         `<li class="ac-item"><span class="ac-name">${esc(a.name)}</span><span class="ac-fte">· ${a.fte}h</span></li>`
       ).join('')}</ul>
       <div class="team-extra">
         <span><strong>${persons > 0 ? persons : '–'}</strong> personas FTE</span>
-        <span>ratio ing./FTE: <strong>${ratio}</strong></span>
-        <span>días prom. proceso: <strong>${avgD}</strong></span>
+        <span>ratio 15d/FTE: <strong>${ratio}</strong></span>
+        <span>AVG días/trato: <strong>${avgD}</strong></span>
       </div>`;
   } else {
     teamInner = `<p class="no-data">Sin ACs asignados</p>`;
@@ -534,16 +535,6 @@ function renderCard(c, isTotal) {
       </div>
       <div class="card-body">${col1}${col2}${col3}${col4}</div>
       <div class="card-backlog">
-        <div class="backlog-meta">
-          <div class="backlog-section">
-            <span class="backlog-section-lbl">Backlog</span>
-            <span class="backlog-total">${c.total_backlog}</span>
-          </div>
-          <div class="backlog-section">
-            <span class="backlog-section-lbl">WIP</span>
-            <span class="wip-total">${c.total_wip||0}</span>
-          </div>
-        </div>
         <div class="backlog-chips">
           ${chipIngreso}
           <div class="chip-sep">│</div>
