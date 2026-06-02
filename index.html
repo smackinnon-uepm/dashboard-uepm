@@ -567,17 +567,20 @@ function toggleCard(headerEl) {
 }
 
 function saveCollapseState() {
-  const names = Array.from(document.querySelectorAll('.card.collapsed[data-name]'))
-                     .map(c => c.dataset.name);
-  try { localStorage.setItem('uepm-collapsed', JSON.stringify(names)); } catch(_) {}
+  // Guarda las que están EXPANDIDAS (por defecto todas van colapsadas)
+  const expanded = Array.from(document.querySelectorAll('.card:not(.collapsed)[data-name]'))
+                        .map(c => c.dataset.name);
+  try { localStorage.setItem('uepm-expanded', JSON.stringify(expanded)); } catch(_) {}
 }
 
 function restoreCollapseState() {
-  let names = [];
-  try { names = JSON.parse(localStorage.getItem('uepm-collapsed') || '[]'); } catch(_) {}
-  if (!names.length) return;
+  // 1. Colapsar todas
+  document.querySelectorAll('.card[data-name]').forEach(c => c.classList.add('collapsed'));
+  // 2. Expandir las que el usuario dejó abiertas
+  let expanded = [];
+  try { expanded = JSON.parse(localStorage.getItem('uepm-expanded') || '[]'); } catch(_) {}
   document.querySelectorAll('.card[data-name]').forEach(card => {
-    if (names.includes(card.dataset.name)) card.classList.add('collapsed');
+    if (expanded.includes(card.dataset.name)) card.classList.remove('collapsed');
   });
 }
 
