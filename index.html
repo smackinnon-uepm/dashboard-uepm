@@ -113,13 +113,25 @@
     .card-header {
       display: flex; align-items: center; justify-content: space-between;
       padding: 9px 16px; border-bottom: 1px solid var(--border); gap: 12px;
+      cursor: pointer; user-select: none;
     }
+    .card-header:hover { filter: brightness(0.97); }
+    .card-total .card-header:hover { filter: brightness(1.08); }
     .campaign-name { font-size: 0.86rem; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
     .status-badge {
       font-size: 0.6rem; font-weight: 700; padding: 2px 8px; border-radius: 20px;
       white-space: nowrap; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.05em;
       border: 1px solid var(--border-2); color: var(--text-3);
     }
+    .card-header-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .card-chevron {
+      font-size: 0.75rem; color: var(--text-3); transition: transform 0.2s; display: inline-block;
+    }
+    .card-total .card-chevron { color: rgba(255,255,255,0.5); }
+    .card.collapsed .card-chevron { transform: rotate(-90deg); }
+    .card.collapsed .card-body    { display: none; }
+    .card.collapsed .card-backlog { display: none; }
+    .card.collapsed .card-header  { border-bottom-color: transparent; }
 
     /* Card body: 4 columns */
     .card-body {
@@ -528,10 +540,13 @@ function renderCard(c, isTotal) {
   }).join('');
 
   return `
-    <div class="card${isTotal ? ' card-total' : ''}">
-      <div class="card-header">
+    <div class="card${isTotal ? ' card-total' : ''}" data-name="${esc(c.name)}">
+      <div class="card-header" onclick="toggleCard(this)">
         <span class="campaign-name">${esc(c.name)}</span>
-        <span class="status-badge">${isTotal ? 'Total' : 'En proceso'}</span>
+        <div class="card-header-right">
+          <span class="status-badge">${isTotal ? 'Total' : 'En proceso'}</span>
+          <span class="card-chevron">▾</span>
+        </div>
       </div>
       <div class="card-body">${col1}${col2}${col3}${col4}</div>
       <div class="card-backlog">
@@ -542,6 +557,28 @@ function renderCard(c, isTotal) {
         </div>
       </div>
     </div>`;
+}
+
+// ── Collapse / expand ─────────────────────────────────────────
+function toggleCard(headerEl) {
+  const card = headerEl.closest('.card');
+  card.classList.toggle('collapsed');
+  saveCollapseState();
+}
+
+function saveCollapseState() {
+  const names = Array.from(document.querySelectorAll('.card.collapsed[data-name]'))
+                     .map(c => c.dataset.name);
+  try { localStorage.setItem('uepm-collapsed', JSON.stringify(names)); } catch(_) {}
+}
+
+function restoreCollapseState() {
+  let names = [];
+  try { names = JSON.parse(localStorage.getItem('uepm-collapsed') || '[]'); } catch(_) {}
+  if (!names.length) return;
+  document.querySelectorAll('.card[data-name]').forEach(card => {
+    if (names.includes(card.dataset.name)) card.classList.add('collapsed');
+  });
 }
 
 // ── Paint ─────────────────────────────────────────────────────
@@ -594,6 +631,7 @@ function paintCards(data) {
 
   loading.style.display = 'none';
   grid.style.display    = 'flex';
+  restoreCollapseState();
 }
 
 // ── Date nav ──────────────────────────────────────────────────
