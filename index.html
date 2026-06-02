@@ -388,17 +388,32 @@ function spark(values, isoDates, color) {
 }
 
 // ── Trend builders ────────────────────────────────────────────
+// Regla: ingresos SIEMPRE de history.json (valor real grabado ese día).
+//        backlog/WIP de computeTrend15d (reconstrucción acumulativa, razonable).
+
+function _ingFromHistory(d, campaignName) {
+  if (!_histData[d]) return null;          // sin dato → null (distinto de 0)
+  const f = _histData[d].find(x => x.name === campaignName);
+  return f ? (f.ingresos_hoy || 0) : null;
+}
+
 function trendForCampaign(c) {
-  // Prioridad 1: trend precalculado en data.js (fechas en ISO yyyy-MM-dd)
   if (c.trend && c.trend.backlogs && c.trend.backlogs.length > 0) {
+    const isoDates = c.trend.dates;
+    // Ingresos: history.json si existe, sino el valor calculado (para el día de hoy
+    // que también está en history porque se graba en el mismo run)
+    const ingresos = isoDates.map((d, i) => {
+      const h = _ingFromHistory(d, c.name);
+      return h !== null ? h : (c.trend.ingresos[i] || 0);
+    });
     return {
-      isoDates: c.trend.dates,
+      isoDates,
       backlogs: c.trend.backlogs,
       wip:      c.trend.wip || [],
-      ingresos: c.trend.ingresos,
+      ingresos,
     };
   }
-  // Fallback: history.json acumulado (fechas ISO)
+  // Fallback completo: todo de history.json
   if (_histDates.length === 0) return null;
   const end   = _currIdx;
   const start = Math.min(_histDates.length - 1, _currIdx + 14);
@@ -407,7 +422,7 @@ function trendForCampaign(c) {
     isoDates: dates,
     backlogs: dates.map(d => { const f = (_histData[d]||[]).find(x=>x.name===c.name); return f?(f.total_backlog||0):0; }),
     wip:      dates.map(d => { const f = (_histData[d]||[]).find(x=>x.name===c.name); return f?(f.total_wip||0):0; }),
-    ingresos: dates.map(d => { const f = (_histData[d]||[]).find(x=>x.name===c.name); return f?f.ingresos_hoy:0; }),
+    ingresos: dates.map(d => { const h = _ingFromHistory(d, c.name); return h !== null ? h : 0; }),
   };
 }
 
@@ -415,11 +430,18 @@ function trendForTotal(data) {
   const first = data.find(c => c.trend && c.trend.backlogs && c.trend.backlogs.length > 0);
   if (first) {
     const n = first.trend.backlogs.length;
+    const isoDates = first.trend.dates;
+    const ingresos = isoDates.map((d, i) => {
+      // Sumar ingresos_hoy de history.json para todas las campañas
+      if (_histData[d]) return _histData[d].reduce((s, x) => s + (x.ingresos_hoy || 0), 0);
+      // Sin history → suma de valores calculados
+      return data.reduce((s, c) => s + (c.trend?.ingresos[i] || 0), 0);
+    });
     return {
-      isoDates: first.trend.dates,
-      backlogs: Array.from({length: n}, (_, i) => data.reduce((s, c) => s + (c.trend?.backlogs[i]  || 0), 0)),
-      wip:      Array.from({length: n}, (_, i) => data.reduce((s, c) => s + (c.trend?.wip?.[i]      || 0), 0)),
-      ingresos: Array.from({length: n}, (_, i) => data.reduce((s, c) => s + (c.trend?.ingresos[i]   || 0), 0)),
+      isoDates,
+      backlogs: Array.from({length: n}, (_, i) => data.reduce((s, c) => s + (c.trend?.backlogs[i] || 0), 0)),
+      wip:      Array.from({length: n}, (_, i) => data.reduce((s, c) => s + (c.trend?.wip?.[i]    || 0), 0)),
+      ingresos,
     };
   }
   if (_histDates.length === 0) return null;
@@ -430,7 +452,7 @@ function trendForTotal(data) {
     isoDates: dates,
     backlogs: dates.map(d => (_histData[d]||[]).reduce((s,c)=>s+(c.total_backlog||0),0)),
     wip:      dates.map(d => (_histData[d]||[]).reduce((s,c)=>s+(c.total_wip||0),0)),
-    ingresos: dates.map(d => (_histData[d]||[]).reduce((s,c)=>s+c.ingresos_hoy,0)),
+    ingresos: dates.map(d => (_histData[d]||[]).reduce((s,c)=>s+(c.ingresos_hoy||0),0)),
   };
 }
 
