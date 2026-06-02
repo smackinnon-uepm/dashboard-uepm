@@ -388,31 +388,35 @@ function spark(values, isoDates, color) {
 }
 
 // ── Trend builders ────────────────────────────────────────────
-// Regla: ingresos SIEMPRE de history.json (valor real grabado ese día).
-//        backlog/WIP de computeTrend15d (reconstrucción acumulativa, razonable).
+// Regla: los 3 valores (ingresos, backlog, WIP) siempre de history.json.
+// computeTrend15d solo se usa como fallback si no hay history para esa fecha.
 
-function _ingFromHistory(d, campaignName) {
-  if (!_histData[d]) return null;          // sin dato → null (distinto de 0)
-  const f = _histData[d].find(x => x.name === campaignName);
-  return f ? (f.ingresos_hoy || 0) : null;
+function _histVal(d, campaignName) {
+  if (!_histData[d]) return null;
+  return _histData[d].find(x => x.name === campaignName) || null;
 }
 
 function trendForCampaign(c) {
-  if (c.trend && c.trend.backlogs && c.trend.backlogs.length > 0) {
-    const isoDates = c.trend.dates;
-    // Ingresos: history.json si existe, sino el valor calculado (para el día de hoy
-    // que también está en history porque se graba en el mismo run)
-    const ingresos = isoDates.map((d, i) => {
-      const h = _ingFromHistory(d, c.name);
-      return h !== null ? h : (c.trend.ingresos[i] || 0);
+  // Usamos las fechas del trend precalculado para saber qué 15 días mostrar
+  const isoDates = (c.trend && c.trend.dates && c.trend.dates.length > 0)
+    ? c.trend.dates : [];
+
+  if (isoDates.length > 0) {
+    const backlogs = isoDates.map((d, i) => {
+      const f = _histVal(d, c.name);
+      return f !== null ? (f.total_backlog || 0) : (c.trend.backlogs[i] || 0);
     });
-    return {
-      isoDates,
-      backlogs: c.trend.backlogs,
-      wip:      c.trend.wip || [],
-      ingresos,
-    };
+    const wip = isoDates.map((d, i) => {
+      const f = _histVal(d, c.name);
+      return f !== null ? (f.total_wip || 0) : (c.trend.wip?.[i] || 0);
+    });
+    const ingresos = isoDates.map((d, i) => {
+      const f = _histVal(d, c.name);
+      return f !== null ? (f.ingresos_hoy || 0) : (c.trend.ingresos[i] || 0);
+    });
+    return { isoDates, backlogs, wip, ingresos };
   }
+
   // Fallback completo: todo de history.json
   if (_histDates.length === 0) return null;
   const end   = _currIdx;
@@ -420,29 +424,27 @@ function trendForCampaign(c) {
   const dates = _histDates.slice(end, start + 1).reverse();
   return {
     isoDates: dates,
-    backlogs: dates.map(d => { const f = (_histData[d]||[]).find(x=>x.name===c.name); return f?(f.total_backlog||0):0; }),
-    wip:      dates.map(d => { const f = (_histData[d]||[]).find(x=>x.name===c.name); return f?(f.total_wip||0):0; }),
-    ingresos: dates.map(d => { const h = _ingFromHistory(d, c.name); return h !== null ? h : 0; }),
+    backlogs: dates.map(d => { const f = _histVal(d, c.name); return f ? (f.total_backlog||0) : 0; }),
+    wip:      dates.map(d => { const f = _histVal(d, c.name); return f ? (f.total_wip||0)     : 0; }),
+    ingresos: dates.map(d => { const f = _histVal(d, c.name); return f ? (f.ingresos_hoy||0)  : 0; }),
   };
 }
 
 function trendForTotal(data) {
-  const first = data.find(c => c.trend && c.trend.backlogs && c.trend.backlogs.length > 0);
+  const first = data.find(c => c.trend && c.trend.dates && c.trend.dates.length > 0);
   if (first) {
-    const n = first.trend.backlogs.length;
     const isoDates = first.trend.dates;
-    const ingresos = isoDates.map((d, i) => {
-      // Sumar ingresos_hoy de history.json para todas las campañas
-      if (_histData[d]) return _histData[d].reduce((s, x) => s + (x.ingresos_hoy || 0), 0);
-      // Sin history → suma de valores calculados
-      return data.reduce((s, c) => s + (c.trend?.ingresos[i] || 0), 0);
-    });
-    return {
-      isoDates,
-      backlogs: Array.from({length: n}, (_, i) => data.reduce((s, c) => s + (c.trend?.backlogs[i] || 0), 0)),
-      wip:      Array.from({length: n}, (_, i) => data.reduce((s, c) => s + (c.trend?.wip?.[i]    || 0), 0)),
-      ingresos,
-    };
+    const n = isoDates.length;
+    const backlogs = isoDates.map((d, i) =>
+      _histData[d] ? _histData[d].reduce((s,x)=>s+(x.total_backlog||0),0)
+                   : data.reduce((s,c)=>s+(c.trend?.backlogs[i]||0),0));
+    const wip = isoDates.map((d, i) =>
+      _histData[d] ? _histData[d].reduce((s,x)=>s+(x.total_wip||0),0)
+                   : data.reduce((s,c)=>s+(c.trend?.wip?.[i]||0),0));
+    const ingresos = isoDates.map((d, i) =>
+      _histData[d] ? _histData[d].reduce((s,x)=>s+(x.ingresos_hoy||0),0)
+                   : data.reduce((s,c)=>s+(c.trend?.ingresos[i]||0),0));
+    return { isoDates, backlogs, wip, ingresos };
   }
   if (_histDates.length === 0) return null;
   const end   = _currIdx;
