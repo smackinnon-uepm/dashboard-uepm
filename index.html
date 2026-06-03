@@ -414,7 +414,7 @@ function trendForCampaign(c) {
       const f = _histVal(d, c.name);
       return f !== null ? (f.ingresos_hoy || 0) : (c.trend.ingresos[i] || 0);
     });
-    return { isoDates, backlogs, wip, ingresos };
+    return { dates: isoDates, backlogs, wip, ingresos };
   }
 
   // Fallback completo: todo de history.json
@@ -423,7 +423,7 @@ function trendForCampaign(c) {
   const start = Math.min(_histDates.length - 1, _currIdx + 14);
   const dates = _histDates.slice(end, start + 1).reverse();
   return {
-    isoDates: dates,
+    dates,
     backlogs: dates.map(d => { const f = _histVal(d, c.name); return f ? (f.total_backlog||0) : 0; }),
     wip:      dates.map(d => { const f = _histVal(d, c.name); return f ? (f.total_wip||0)     : 0; }),
     ingresos: dates.map(d => { const f = _histVal(d, c.name); return f ? (f.ingresos_hoy||0)  : 0; }),
@@ -444,14 +444,15 @@ function trendForTotal(data) {
     const ingresos = isoDates.map((d, i) =>
       _histData[d] ? _histData[d].reduce((s,x)=>s+(x.ingresos_hoy||0),0)
                    : data.reduce((s,c)=>s+(c.trend?.ingresos[i]||0),0));
-    return { isoDates, backlogs, wip, ingresos };
+    // Usar "dates" (no "isoDates") para que trendForCampaign lo encuentre en c.trend.dates
+    return { dates: isoDates, backlogs, wip, ingresos };
   }
   if (_histDates.length === 0) return null;
   const end   = _currIdx;
   const start = Math.min(_histDates.length - 1, _currIdx + 14);
   const dates = _histDates.slice(end, start + 1).reverse();
   return {
-    isoDates: dates,
+    dates,
     backlogs: dates.map(d => (_histData[d]||[]).reduce((s,c)=>s+(c.total_backlog||0),0)),
     wip:      dates.map(d => (_histData[d]||[]).reduce((s,c)=>s+(c.total_wip||0),0)),
     ingresos: dates.map(d => (_histData[d]||[]).reduce((s,c)=>s+(c.ingresos_hoy||0),0)),
@@ -529,15 +530,15 @@ function renderCard(c, isTotal) {
     ? `<div class="trend-block">
          <div class="trend-item">
            <div class="trend-lbl">Ingresos<span class="trend-avg">~${avg(t.ingresos)}/día</span></div>
-           ${spark(t.ingresos, t.isoDates, 'var(--orange)')}
+           ${spark(t.ingresos, t.dates, 'var(--orange)')}
          </div>
          <div class="trend-item">
            <div class="trend-lbl">Backlog<span class="trend-avg">~${avg(t.backlogs)}/día</span></div>
-           ${spark(t.backlogs, t.isoDates, 'var(--teal-mid)')}
+           ${spark(t.backlogs, t.dates, 'var(--teal-mid)')}
          </div>
          <div class="trend-item">
            <div class="trend-lbl">WIP<span class="trend-avg">~${avg(t.wip||[])}/día</span></div>
-           ${spark(t.wip||[], t.isoDates, 'var(--teal-dark)')}
+           ${spark(t.wip||[], t.dates, 'var(--teal-dark)')}
          </div>
        </div>`
     : `<p class="trend-empty">Sin datos históricos aún</p>`;
