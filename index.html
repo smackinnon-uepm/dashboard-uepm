@@ -252,6 +252,26 @@
     .card-total .chip          { background: #fff; border-color: var(--teal-border); }
     .card-total .backlog-total { color: var(--teal-dark); }
 
+    /* ── Search bar ─────────────────────────────────── */
+    .top-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+    .search-wrap {
+      display: flex; align-items: center; gap: 7px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 7px; padding: 5px 12px; flex: 1; max-width: 280px;
+    }
+    .search-wrap svg { flex-shrink: 0; color: var(--text-3); }
+    .search-input {
+      border: none; outline: none; background: transparent;
+      font-size: 0.83rem; color: var(--text); width: 100%;
+    }
+    .search-input::placeholder { color: var(--text-3); }
+    .search-clear {
+      background: none; border: none; cursor: pointer; color: var(--text-3);
+      font-size: 1rem; line-height: 1; padding: 0 2px; flex-shrink: 0;
+      display: none;
+    }
+    .search-clear:hover { color: var(--text-2); }
+
     /* ── Loading / Error ─────────────────────────────── */
     .loading { text-align: center; padding: 60px 20px; color: var(--text-3); font-size: 0.88rem; }
     .error-box {
@@ -303,7 +323,8 @@
 
 <main class="main">
   <div class="loading" id="loading">Cargando datos...</div>
-  <div id="date-nav" class="date-nav" style="display:none">
+  <div class="top-bar" id="top-bar" style="display:none">
+    <div id="date-nav" class="date-nav" style="margin-bottom:0">
     <button class="date-nav-btn" id="dnav-prev" onclick="navigateDate(1)">&#8592;</button>
     <div class="date-nav-center">
       <span id="dnav-date">—</span>
@@ -311,6 +332,14 @@
     </div>
     <button class="date-nav-btn" id="dnav-next" onclick="navigateDate(-1)">&#8594;</button>
   </div>
+  <div class="search-wrap">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+    <input type="text" id="campaign-search" class="search-input"
+           placeholder="Buscar campaña..."
+           oninput="filterCampaigns(this.value)">
+    <button class="search-clear" id="search-clear" onclick="clearSearch()" title="Limpiar">✕</button>
+  </div>
+</div>
   <div class="grid" id="dashboard" style="display:none"></div>
 </main>
 
@@ -584,6 +613,23 @@ function renderCard(c, isTotal) {
     </div>`;
 }
 
+// ── Search / filter ───────────────────────────────────────────
+function filterCampaigns(q) {
+  const s = q.trim().toLowerCase();
+  document.getElementById('search-clear').style.display = s ? 'block' : 'none';
+  document.querySelectorAll('.card[data-name]:not(.card-total)').forEach(card => {
+    const name = (card.dataset.name || '').toLowerCase();
+    card.style.display = (!s || name.includes(s)) ? '' : 'none';
+  });
+}
+
+function clearSearch() {
+  const inp = document.getElementById('campaign-search');
+  inp.value = '';
+  filterCampaigns('');
+  inp.focus();
+}
+
 // ── Collapse / expand ─────────────────────────────────────────
 function toggleCard(headerEl) {
   const card = headerEl.closest('.card');
@@ -659,6 +705,10 @@ function paintCards(data) {
 
   loading.style.display = 'none';
   grid.style.display    = 'flex';
+  document.getElementById('top-bar').style.display = 'flex';
+  // Re-aplicar filtro si había algo escrito
+  const q = document.getElementById('campaign-search').value;
+  if (q) filterCampaigns(q);
   restoreCollapseState();
 }
 
@@ -671,6 +721,9 @@ function refreshDateNav() {
   document.getElementById('dnav-prev').disabled       = _currIdx >= _histDates.length - 1;
   document.getElementById('dnav-next').disabled       = _currIdx <= 0;
   nav.style.display = 'flex';
+  // Clear search when changing date
+  const inp = document.getElementById('campaign-search');
+  if (inp) { inp.value = ''; filterCampaigns(''); }
 }
 
 function navigateDate(delta) {
