@@ -1,4 +1,4 @@
-// Generado: 18/06/2026 02:10 hora Argentina
+// Generado: 18/06/2026 08:10 hora Argentina
 window.DASHBOARD_DATA = [
   {
     "name": "ARG-ALZ-KARUNA-BMS-ADEPT4",
@@ -13,11 +13,11 @@ window.DASHBOARD_DATA = [
     "ingresos_hoy": 0,
     "backlog": {
       "Ingreso del Paciente": 1,
-      "Derivado": 1,
       "En gestión AC": 41,
-      "Visita Cumplida": 4,
-      "Consentimiento Firmado": 2,
       "Randomizado": 2,
+      "Visita Cumplida": 4,
+      "Derivado": 1,
+      "Consentimiento Firmado": 2,
       "Contactado por el Investigador": 2,
       "Visita Programada": 1
     },
@@ -122,12 +122,12 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "En gestión AC": 266,
       "Ingreso del Paciente": 382,
-      "Visita Cumplida": 7,
       "Visita Programada": 11,
-      "Derivado": 7,
-      "Contactado por el Investigador": 16,
       "Randomizado": 6,
-      "Consentimiento Firmado": 8
+      "Consentimiento Firmado": 8,
+      "Contactado por el Investigador": 16,
+      "Visita Cumplida": 7,
+      "Derivado": 7
     },
     "total_backlog": 382,
     "total_wip": 315,
@@ -231,10 +231,10 @@ window.DASHBOARD_DATA = [
       "Ingreso del Paciente": 13,
       "En gestión AC": 96,
       "Derivado": 5,
-      "Visita Cumplida": 1,
+      "Contactado por el Investigador": 2,
       "Visita Programada": 2,
       "Consentimiento Firmado": 2,
-      "Contactado por el Investigador": 2,
+      "Visita Cumplida": 1,
       "Pre Derivado": 1
     },
     "total_backlog": 13,
@@ -332,13 +332,13 @@ window.DASHBOARD_DATA = [
     "fte_persons": 2,
     "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 9,
       "En gestión AC": 65,
+      "Ingreso del Paciente": 9,
       "Contactado por el Investigador": 9,
       "Visita Cumplida": 2,
       "Consentimiento Firmado": 1,
-      "Randomizado": 2,
-      "Visita Programada": 2
+      "Visita Programada": 2,
+      "Randomizado": 2
     },
     "total_backlog": 9,
     "total_wip": 79,
@@ -630,11 +630,11 @@ window.DASHBOARD_DATA = [
     "ingresos_hoy": 0,
     "backlog": {
       "En gestión AC": 148,
-      "Consentimiento Firmado": 1,
       "Visita Programada": 6,
+      "Consentimiento Firmado": 1,
       "Visita Cumplida": 4,
-      "Derivado": 1,
       "Contactado por el Investigador": 2,
+      "Derivado": 1,
       "Pre Derivado": 1
     },
     "total_backlog": 0,
@@ -1018,9 +1018,9 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "Ingreso del Paciente": 113,
       "En gestión AC": 70,
-      "Consentimiento Firmado": 1,
       "Visita Programada": 6,
       "Derivado": 3,
+      "Consentimiento Firmado": 1,
       "Visita Cumplida": 1,
       "Contactado por el Investigador": 1
     },
@@ -1429,11 +1429,11 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "En gestión AC": 23,
       "Ingreso del Paciente": 3,
-      "Derivado": 4,
       "Consentimiento Firmado": 7,
-      "Randomizado": 3,
-      "Visita Cumplida": 2,
       "Contactado por el Investigador": 1,
+      "Randomizado": 3,
+      "Derivado": 4,
+      "Visita Cumplida": 2,
       "Visita Programada": 1
     },
     "total_backlog": 3,
@@ -1633,10 +1633,10 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "Ingreso del Paciente": 6,
       "En gestión AC": 51,
-      "Derivado": 3,
+      "Visita Programada": 1,
       "Consentimiento Firmado": 1,
-      "Randomizado": 1,
-      "Visita Programada": 1
+      "Derivado": 3,
+      "Randomizado": 1
     },
     "total_backlog": 6,
     "total_wip": 56,
@@ -1734,13 +1734,13 @@ window.DASHBOARD_DATA = [
     "ingresos_hoy": 0,
     "backlog": {
       "Ingreso del Paciente": 87,
+      "Visita Programada": 5,
       "En gestión AC": 97,
-      "Derivado": 9,
+      "Contactado por el Investigador": 3,
       "Consentimiento Firmado": 4,
       "Visita Cumplida": 8,
-      "Contactado por el Investigador": 3,
-      "Visita Programada": 5,
       "Randomizado": 2,
+      "Derivado": 9,
       "Pre Derivado": 1
     },
     "total_backlog": 87,
@@ -1823,4 +1823,4 @@ window.DASHBOARD_DATA = [
     }
   }
 ];
-window.LAST_UPDATED = "18/06/2026 02:10";
+window.LAST_UPDATED = "18/06/2026 08:10";
