@@ -8302,7 +8302,7 @@
       "acs": [],
       "total_fte": 0,
       "fte_persons": 0,
-      "ingresos_hoy": 3,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 3,
         "En gestión AC": 50,
@@ -8513,7 +8513,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 27,
+      "ingresos_hoy": 29,
       "backlog": {
         "En gestión AC": 275,
         "Ingreso del Paciente": 191,
@@ -8621,7 +8621,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 11,
+      "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 252,
         "En gestión AC": 103,
@@ -8725,7 +8725,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 12,
+      "ingresos_hoy": 14,
       "backlog": {
         "Ingreso del Paciente": 4,
         "Contactado por el Investigador": 6,
@@ -9024,7 +9024,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 17,
+      "ingresos_hoy": 21,
       "backlog": {
         "Ingreso del Paciente": 6,
         "En gestión AC": 99,
@@ -9215,7 +9215,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 1,
         "En gestión AC": 1
@@ -9515,7 +9515,7 @@
       ],
       "total_fte": 18,
       "fte_persons": 2.25,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 135,
         "En gestión AC": 65,
@@ -9736,7 +9736,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 8,
       "backlog": {
         "Ingreso del Paciente": 17,
         "En gestión AC": 38
@@ -9934,7 +9934,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 9,
+      "ingresos_hoy": 11,
       "backlog": {
         "Ingreso del Paciente": 27,
         "Visita Cumplida": 5,
@@ -10242,7 +10242,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 24,
+      "ingresos_hoy": 23,
       "backlog": {
         "En gestión AC": 266,
         "Ingreso del Paciente": 202,
@@ -10350,7 +10350,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 7,
+      "ingresos_hoy": 6,
       "backlog": {
         "Ingreso del Paciente": 239,
         "En gestión AC": 106,
@@ -10454,7 +10454,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 13,
+      "ingresos_hoy": 12,
       "backlog": {
         "Ingreso del Paciente": 19,
         "En gestión AC": 67,
@@ -10558,7 +10558,7 @@
       ],
       "total_fte": 6.5,
       "fte_persons": 0.81,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 2,
       "backlog": {
         "En gestión AC": 3
       },
@@ -10655,7 +10655,7 @@
       ],
       "total_fte": 6.5,
       "fte_persons": 0.81,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 1,
       "backlog": {
         "En gestión AC": 5
       },
@@ -10752,7 +10752,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 23,
+      "ingresos_hoy": 22,
       "backlog": {
         "Ingreso del Paciente": 36,
         "En gestión AC": 99,
@@ -10943,7 +10943,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 1,
       "backlog": {
         "Ingreso del Paciente": 1,
         "En gestión AC": 1
@@ -11041,7 +11041,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 7,
+      "ingresos_hoy": 8,
       "backlog": {
         "Ingreso del Paciente": 34,
         "En gestión AC": 14
@@ -11139,7 +11139,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 12,
+      "ingresos_hoy": 11,
       "backlog": {
         "Ingreso del Paciente": 22,
         "En gestión AC": 73,
@@ -11243,7 +11243,7 @@
       ],
       "total_fte": 18,
       "fte_persons": 2.25,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 132,
         "En gestión AC": 63,
@@ -11463,7 +11463,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 10,
       "backlog": {
         "Ingreso del Paciente": 14,
         "En gestión AC": 46
@@ -11561,7 +11561,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 6,
       "backlog": {
         "Ingreso del Paciente": 5,
         "En gestión AC": 37,
@@ -11661,7 +11661,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 14,
+      "ingresos_hoy": 13,
       "backlog": {
         "Ingreso del Paciente": 38,
         "Visita Programada": 5,
@@ -11974,7 +11974,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 25,
+      "ingresos_hoy": 22,
       "backlog": {
         "En gestión AC": 265,
         "Ingreso del Paciente": 216,
@@ -12082,7 +12082,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 3,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 225,
         "En gestión AC": 99,
@@ -12186,7 +12186,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 11,
+      "ingresos_hoy": 12,
       "backlog": {
         "Ingreso del Paciente": 2,
         "En gestión AC": 87,
@@ -12290,7 +12290,7 @@
       ],
       "total_fte": 6.5,
       "fte_persons": 0.81,
-      "ingresos_hoy": 1,
+      "ingresos_hoy": 2,
       "backlog": {
         "En gestión AC": 3,
         "Ingreso del Paciente": 1
@@ -12388,7 +12388,7 @@
       ],
       "total_fte": 6.5,
       "fte_persons": 0.81,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 4,
       "backlog": {
         "En gestión AC": 5,
         "Ingreso del Paciente": 5
@@ -12486,7 +12486,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 10,
+      "ingresos_hoy": 11,
       "backlog": {
         "Ingreso del Paciente": 6,
         "En gestión AC": 117,
@@ -12873,7 +12873,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 20,
+      "ingresos_hoy": 16,
       "backlog": {
         "Ingreso del Paciente": 32,
         "En gestión AC": 69,
@@ -13196,7 +13196,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 15,
         "En gestión AC": 54
@@ -13394,7 +13394,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 13,
+      "ingresos_hoy": 11,
       "backlog": {
         "Ingreso del Paciente": 51,
         "Visita Programada": 4,
@@ -13497,7 +13497,7 @@
       ],
       "total_fte": 4,
       "fte_persons": 0.5,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 8,
         "Visita Programada": 5,
@@ -13707,7 +13707,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 23,
+      "ingresos_hoy": 26,
       "backlog": {
         "En gestión AC": 267,
         "Ingreso del Paciente": 237,
@@ -13815,7 +13815,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 232,
         "En gestión AC": 99,
@@ -13919,7 +13919,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 7,
+      "ingresos_hoy": 9,
       "backlog": {
         "Ingreso del Paciente": 10,
         "En gestión AC": 87,
@@ -14121,7 +14121,7 @@
       ],
       "total_fte": 6.5,
       "fte_persons": 0.81,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 1,
       "backlog": {
         "En gestión AC": 5,
         "Ingreso del Paciente": 5
@@ -14219,7 +14219,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 13,
+      "ingresos_hoy": 24,
       "backlog": {
         "Ingreso del Paciente": 20,
         "En gestión AC": 117,
@@ -14408,7 +14408,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 2,
         "En gestión AC": 1
@@ -14506,7 +14506,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 29,
         "En gestión AC": 22
@@ -14604,7 +14604,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 9,
+      "ingresos_hoy": 10,
       "backlog": {
         "Ingreso del Paciente": 36,
         "En gestión AC": 69,
@@ -14707,7 +14707,7 @@
       ],
       "total_fte": 18,
       "fte_persons": 2.25,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 1,
       "backlog": {
         "Ingreso del Paciente": 127,
         "En gestión AC": 62,
@@ -14927,7 +14927,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 17,
         "En gestión AC": 54
@@ -15025,7 +15025,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 1,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 9,
         "En gestión AC": 34,
@@ -15125,7 +15125,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 9,
       "backlog": {
         "Ingreso del Paciente": 59,
         "En gestión AC": 108,
@@ -15228,7 +15228,7 @@
       ],
       "total_fte": 4,
       "fte_persons": 0.5,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 16,
         "Randomizado": 1,
@@ -15546,7 +15546,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 8,
       "backlog": {
         "Ingreso del Paciente": 236,
         "En gestión AC": 99,
@@ -15650,7 +15650,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 22,
+      "ingresos_hoy": 20,
       "backlog": {
         "Ingreso del Paciente": 34,
         "En gestión AC": 87,
@@ -15950,7 +15950,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 18,
+      "ingresos_hoy": 24,
       "backlog": {
         "Ingreso del Paciente": 49,
         "En gestión AC": 117,
@@ -16139,7 +16139,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 2,
         "En gestión AC": 1
@@ -16237,7 +16237,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 36,
         "En gestión AC": 22
@@ -16335,7 +16335,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 19,
+      "ingresos_hoy": 16,
       "backlog": {
         "Ingreso del Paciente": 55,
         "En gestión AC": 69,
@@ -16757,7 +16757,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 18,
         "En gestión AC": 34,
@@ -16857,7 +16857,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 65,
         "En gestión AC": 108,
@@ -16960,7 +16960,7 @@
       ],
       "total_fte": 4,
       "fte_persons": 0.5,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 2,
         "Randomizado": 1,
@@ -17170,7 +17170,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 38,
+      "ingresos_hoy": 34,
       "backlog": {
         "En gestión AC": 274,
         "Ingreso del Paciente": 286,
@@ -17278,7 +17278,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 9,
+      "ingresos_hoy": 8,
       "backlog": {
         "Ingreso del Paciente": 173,
         "En gestión AC": 100,
@@ -17382,7 +17382,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 13,
+      "ingresos_hoy": 14,
       "backlog": {
         "Ingreso del Paciente": 9,
         "En gestión AC": 96,
@@ -17681,7 +17681,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 11,
+      "ingresos_hoy": 12,
       "backlog": {
         "Ingreso del Paciente": 4,
         "En gestión AC": 131,
@@ -18066,7 +18066,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 11,
+      "ingresos_hoy": 13,
       "backlog": {
         "Ingreso del Paciente": 55,
         "En gestión AC": 73,
@@ -18487,7 +18487,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 22,
         "En gestión AC": 35,
@@ -18587,7 +18587,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 10,
+      "ingresos_hoy": 13,
       "backlog": {
         "Ingreso del Paciente": 63,
         "En gestión AC": 115,
@@ -18798,7 +18798,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 27,
+      "ingresos_hoy": 30,
       "backlog": {
         "En gestión AC": 270,
         "Ingreso del Paciente": 306,
@@ -18906,7 +18906,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 9,
       "backlog": {
         "Ingreso del Paciente": 4,
         "En gestión AC": 103,
@@ -19010,7 +19010,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 7,
+      "ingresos_hoy": 9,
       "backlog": {
         "Ingreso del Paciente": 3,
         "En gestión AC": 90,
@@ -19308,7 +19308,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 15,
+      "ingresos_hoy": 23,
       "backlog": {
         "Ingreso del Paciente": 5,
         "En gestión AC": 113,
@@ -19499,7 +19499,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 1,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 2,
         "En gestión AC": 1
@@ -19597,7 +19597,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 6,
       "backlog": {
         "Ingreso del Paciente": 32,
         "En gestión AC": 23
@@ -19695,7 +19695,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 54,
         "En gestión AC": 79,
@@ -19989,7 +19989,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 6,
       "backlog": {
         "Ingreso del Paciente": 4,
         "En gestión AC": 8
@@ -20304,7 +20304,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 1,
       "backlog": {
         "Ingreso del Paciente": 20,
         "En gestión AC": 35,
@@ -20404,7 +20404,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 9,
       "backlog": {
         "Ingreso del Paciente": 67,
         "Visita Programada": 3,
@@ -20507,7 +20507,7 @@
       ],
       "total_fte": 4,
       "fte_persons": 0.5,
-      "ingresos_hoy": 6,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 6,
         "En gestión AC": 55,
@@ -20615,7 +20615,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 24,
+      "ingresos_hoy": 17,
       "backlog": {
         "En gestión AC": 265,
         "Ingreso del Paciente": 320,
@@ -20827,7 +20827,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 13,
+      "ingresos_hoy": 14,
       "backlog": {
         "Ingreso del Paciente": 6,
         "Visita Cumplida": 4,
@@ -21126,7 +21126,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 13,
+      "ingresos_hoy": 17,
       "backlog": {
         "Ingreso del Paciente": 8,
         "En gestión AC": 84,
@@ -21415,7 +21415,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 9,
+      "ingresos_hoy": 8,
       "backlog": {
         "Ingreso del Paciente": 31,
         "En gestión AC": 24
@@ -21513,7 +21513,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 14,
+      "ingresos_hoy": 9,
       "backlog": {
         "Ingreso del Paciente": 60,
         "En gestión AC": 79,
@@ -21709,7 +21709,7 @@
       "acs": [],
       "total_fte": 0,
       "fte_persons": 0,
-      "ingresos_hoy": 7,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 33,
         "En gestión AC": 4
@@ -21807,7 +21807,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 3,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 3,
         "En gestión AC": 12
@@ -22024,7 +22024,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 17,
+      "ingresos_hoy": 11,
       "backlog": {
         "Ingreso del Paciente": 53,
         "En gestión AC": 70
@@ -22122,7 +22122,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 15,
         "En gestión AC": 40,
@@ -22434,7 +22434,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 20,
+      "ingresos_hoy": 16,
       "backlog": {
         "En gestión AC": 259,
         "Ingreso del Paciente": 314,
@@ -22542,7 +22542,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 5,
+      "ingresos_hoy": 4,
       "backlog": {
         "En gestión AC": 92,
         "Ingreso del Paciente": 6,
@@ -22646,7 +22646,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 15,
+      "ingresos_hoy": 12,
       "backlog": {
         "Ingreso del Paciente": 7,
         "En gestión AC": 68,
@@ -22944,7 +22944,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 18,
+      "ingresos_hoy": 20,
       "backlog": {
         "Ingreso del Paciente": 13,
         "En gestión AC": 74,
@@ -23135,7 +23135,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 1,
       "backlog": {
         "Ingreso del Paciente": 1,
         "En gestión AC": 2
@@ -23233,7 +23233,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 29,
         "En gestión AC": 27
@@ -23331,7 +23331,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 60,
         "En gestión AC": 73,
@@ -23436,7 +23436,7 @@
       ],
       "total_fte": 18,
       "fte_persons": 2.25,
-      "ingresos_hoy": 3,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 4,
         "En gestión AC": 53,
@@ -23528,7 +23528,7 @@
       "acs": [],
       "total_fte": 0,
       "fte_persons": 0,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 36,
         "En gestión AC": 9
@@ -23626,7 +23626,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 4,
         "En gestión AC": 11
@@ -23740,7 +23740,7 @@
       ],
       "total_fte": 38,
       "fte_persons": 4.75,
-      "ingresos_hoy": 3,
+      "ingresos_hoy": 4,
       "backlog": {
         "En gestión AC": 18,
         "Ingreso del Paciente": 2,
@@ -23844,7 +23844,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 10,
+      "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 52,
         "En gestión AC": 71,
@@ -23943,7 +23943,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 14,
         "En gestión AC": 43,
@@ -24044,7 +24044,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 77,
         "En gestión AC": 86,
@@ -24147,7 +24147,7 @@
       ],
       "total_fte": 4,
       "fte_persons": 0.5,
-      "ingresos_hoy": 1,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 1,
         "Visita Programada": 4,
@@ -24255,7 +24255,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 12,
+      "ingresos_hoy": 17,
       "backlog": {
         "En gestión AC": 261,
         "Ingreso del Paciente": 301,
@@ -24363,7 +24363,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 1,
         "En gestión AC": 87,
@@ -24467,7 +24467,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 14,
+      "ingresos_hoy": 21,
       "backlog": {
         "Ingreso del Paciente": 1,
         "En gestión AC": 60,
@@ -24668,7 +24668,7 @@
       ],
       "total_fte": 6.5,
       "fte_persons": 0.81,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 1,
       "backlog": {
         "En gestión AC": 5
       },
@@ -24765,7 +24765,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 11,
+      "ingresos_hoy": 20,
       "backlog": {
         "Ingreso del Paciente": 2,
         "En gestión AC": 66,
@@ -25054,7 +25054,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 24,
         "En gestión AC": 27
@@ -25152,7 +25152,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 6,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 60,
         "En gestión AC": 69,
@@ -25258,7 +25258,7 @@
       ],
       "total_fte": 18,
       "fte_persons": 2.25,
-      "ingresos_hoy": 1,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 2,
         "En gestión AC": 47,
@@ -25349,7 +25349,7 @@
       "acs": [],
       "total_fte": 0,
       "fte_persons": 0,
-      "ingresos_hoy": 7,
+      "ingresos_hoy": 10,
       "backlog": {
         "Ingreso del Paciente": 34,
         "En gestión AC": 11
@@ -25665,7 +25665,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 11,
+      "ingresos_hoy": 10,
       "backlog": {
         "Ingreso del Paciente": 51,
         "En gestión AC": 76,
@@ -25764,7 +25764,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 12,
         "En gestión AC": 46,
@@ -25865,7 +25865,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 15,
+      "ingresos_hoy": 18,
       "backlog": {
         "Ingreso del Paciente": 70,
         "En gestión AC": 93,
@@ -26075,7 +26075,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 27,
+      "ingresos_hoy": 17,
       "backlog": {
         "En gestión AC": 262,
         "Ingreso del Paciente": 335,
@@ -26183,7 +26183,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 6,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 9,
         "En gestión AC": 86,
@@ -26287,7 +26287,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 6,
+      "ingresos_hoy": 8,
       "backlog": {
         "Ingreso del Paciente": 15,
         "En gestión AC": 60,
@@ -26587,7 +26587,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 27,
+      "ingresos_hoy": 32,
       "backlog": {
         "Ingreso del Paciente": 39,
         "En gestión AC": 66,
@@ -26779,7 +26779,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 1,
       "backlog": {
         "Ingreso del Paciente": 2,
         "En gestión AC": 3
@@ -27172,7 +27172,7 @@
       "acs": [],
       "total_fte": 0,
       "fte_persons": 0,
-      "ingresos_hoy": 7,
+      "ingresos_hoy": 5,
       "backlog": {
         "Ingreso del Paciente": 44,
         "En gestión AC": 10
@@ -27270,7 +27270,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 12,
         "En gestión AC": 15
@@ -27688,7 +27688,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 9,
+      "ingresos_hoy": 10,
       "backlog": {
         "Ingreso del Paciente": 81,
         "En gestión AC": 91,
@@ -27898,7 +27898,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 28,
+      "ingresos_hoy": 30,
       "backlog": {
         "En gestión AC": 262,
         "Ingreso del Paciente": 357,
@@ -28006,7 +28006,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 6,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 14,
         "En gestión AC": 86,
@@ -28110,7 +28110,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 14,
+      "ingresos_hoy": 17,
       "backlog": {
         "Ingreso del Paciente": 31,
         "En gestión AC": 60,
@@ -28410,7 +28410,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 32,
+      "ingresos_hoy": 35,
       "backlog": {
         "Ingreso del Paciente": 77,
         "En gestión AC": 66,
@@ -28700,7 +28700,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 29,
         "En gestión AC": 27
@@ -28798,7 +28798,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 20,
+      "ingresos_hoy": 18,
       "backlog": {
         "Ingreso del Paciente": 82,
         "En gestión AC": 69,
@@ -28995,7 +28995,7 @@
       "acs": [],
       "total_fte": 0,
       "fte_persons": 0,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 49,
         "En gestión AC": 10
@@ -29311,7 +29311,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 18,
+      "ingresos_hoy": 17,
       "backlog": {
         "Ingreso del Paciente": 89,
         "En gestión AC": 76,
@@ -29410,7 +29410,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 4,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 16,
         "En gestión AC": 45,
@@ -29511,7 +29511,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 10,
       "backlog": {
         "Ingreso del Paciente": 91,
         "En gestión AC": 91,
@@ -29829,7 +29829,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 6,
+      "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 17,
         "En gestión AC": 86,
@@ -29933,7 +29933,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 17,
+      "ingresos_hoy": 20,
       "backlog": {
         "En gestión AC": 74,
         "Ingreso del Paciente": 5,
@@ -30232,7 +30232,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 27,
+      "ingresos_hoy": 34,
       "backlog": {
         "Ingreso del Paciente": 11,
         "En gestión AC": 125,
@@ -30523,7 +30523,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 4,
       "backlog": {
         "Ingreso del Paciente": 26,
         "En gestión AC": 31
@@ -30727,7 +30727,7 @@
       ],
       "total_fte": 18,
       "fte_persons": 2.25,
-      "ingresos_hoy": 1,
+      "ingresos_hoy": 3,
       "backlog": {
         "Ingreso del Paciente": 2,
         "En gestión AC": 53,
@@ -30819,7 +30819,7 @@
       "acs": [],
       "total_fte": 0,
       "fte_persons": 0,
-      "ingresos_hoy": 10,
+      "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 57,
         "En gestión AC": 10
@@ -31031,7 +31031,7 @@
       ],
       "total_fte": 38,
       "fte_persons": 4.75,
-      "ingresos_hoy": 3,
+      "ingresos_hoy": 4,
       "backlog": {
         "En gestión AC": 20,
         "Ingreso del Paciente": 4,
@@ -31135,7 +31135,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 9,
+      "ingresos_hoy": 8,
       "backlog": {
         "Ingreso del Paciente": 89,
         "En gestión AC": 85,
@@ -31234,7 +31234,7 @@
       ],
       "total_fte": 10,
       "fte_persons": 1.25,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 1,
       "backlog": {
         "Ingreso del Paciente": 6,
         "En gestión AC": 52,
@@ -31335,7 +31335,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 6,
+      "ingresos_hoy": 10,
       "backlog": {
         "Ingreso del Paciente": 99,
         "En gestión AC": 91,
@@ -31546,7 +31546,7 @@
       ],
       "total_fte": 24,
       "fte_persons": 3,
-      "ingresos_hoy": 28,
+      "ingresos_hoy": 30,
       "backlog": {
         "En gestión AC": 264,
         "Ingreso del Paciente": 384,
@@ -31654,7 +31654,7 @@
       ],
       "total_fte": 22,
       "fte_persons": 2.75,
-      "ingresos_hoy": 10,
+      "ingresos_hoy": 11,
       "backlog": {
         "Ingreso del Paciente": 14,
         "En gestión AC": 92,
@@ -31758,7 +31758,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 9,
+      "ingresos_hoy": 10,
       "backlog": {
         "En gestión AC": 64,
         "Ingreso del Paciente": 7,
@@ -32056,7 +32056,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 26,
+      "ingresos_hoy": 34,
       "backlog": {
         "Ingreso del Paciente": 11,
         "En gestión AC": 139,
@@ -32346,7 +32346,7 @@
       ],
       "total_fte": 6,
       "fte_persons": 0.75,
-      "ingresos_hoy": 6,
+      "ingresos_hoy": 7,
       "backlog": {
         "Ingreso del Paciente": 28,
         "En gestión AC": 26
@@ -32444,7 +32444,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 15,
+      "ingresos_hoy": 20,
       "backlog": {
         "Ingreso del Paciente": 108,
         "En gestión AC": 69,
@@ -32551,7 +32551,7 @@
       ],
       "total_fte": 18,
       "fte_persons": 2.25,
-      "ingresos_hoy": 1,
+      "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 2,
         "En gestión AC": 49,
@@ -32643,7 +32643,7 @@
       "acs": [],
       "total_fte": 0,
       "fte_persons": 0,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 9,
       "backlog": {
         "Ingreso del Paciente": 59,
         "En gestión AC": 17
@@ -32741,7 +32741,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 2,
+      "ingresos_hoy": 1,
       "backlog": {
         "Ingreso del Paciente": 13,
         "En gestión AC": 19
@@ -32958,7 +32958,7 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 6,
+      "ingresos_hoy": 12,
       "backlog": {
         "Ingreso del Paciente": 89,
         "En gestión AC": 78,
@@ -33159,7 +33159,7 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 8,
+      "ingresos_hoy": 9,
       "backlog": {
         "Ingreso del Paciente": 82,
         "Derivado": 9,
@@ -35091,11 +35091,11 @@
         "Ingreso del Paciente": 1,
         "En gestión AC": 41,
         "Derivado": 1,
-        "Visita Cumplida": 4,
         "Randomizado": 2,
+        "Visita Cumplida": 4,
         "Consentimiento Firmado": 2,
-        "Contactado por el Investigador": 2,
-        "Visita Programada": 1
+        "Visita Programada": 1,
+        "Contactado por el Investigador": 2
       },
       "total_backlog": 1,
       "total_wip": 51,
@@ -35194,12 +35194,12 @@
       "backlog": {
         "En gestión AC": 266,
         "Ingreso del Paciente": 382,
-        "Visita Cumplida": 7,
-        "Visita Programada": 11,
         "Contactado por el Investigador": 16,
-        "Derivado": 7,
+        "Visita Cumplida": 7,
         "Randomizado": 6,
-        "Consentimiento Firmado": 8
+        "Visita Programada": 11,
+        "Consentimiento Firmado": 8,
+        "Derivado": 7
       },
       "total_backlog": 382,
       "total_wip": 315,
@@ -35302,12 +35302,12 @@
       "backlog": {
         "Ingreso del Paciente": 13,
         "En gestión AC": 96,
+        "Visita Programada": 2,
         "Pre Derivado": 1,
         "Derivado": 5,
-        "Contactado por el Investigador": 2,
-        "Visita Programada": 2,
         "Consentimiento Firmado": 2,
-        "Visita Cumplida": 1
+        "Visita Cumplida": 1,
+        "Contactado por el Investigador": 2
       },
       "total_backlog": 13,
       "total_wip": 109,
@@ -35404,11 +35404,11 @@
       "fte_persons": 2,
       "ingresos_hoy": 0,
       "backlog": {
-        "Ingreso del Paciente": 9,
         "En gestión AC": 65,
-        "Visita Cumplida": 2,
+        "Ingreso del Paciente": 9,
         "Contactado por el Investigador": 9,
         "Consentimiento Firmado": 1,
+        "Visita Cumplida": 2,
         "Visita Programada": 2,
         "Randomizado": 2
       },
@@ -35702,11 +35702,11 @@
       "ingresos_hoy": 0,
       "backlog": {
         "En gestión AC": 148,
-        "Consentimiento Firmado": 1,
         "Visita Programada": 6,
-        "Contactado por el Investigador": 2,
+        "Consentimiento Firmado": 1,
         "Visita Cumplida": 4,
         "Derivado": 1,
+        "Contactado por el Investigador": 2,
         "Pre Derivado": 1
       },
       "total_backlog": 0,
@@ -36090,11 +36090,11 @@
       "backlog": {
         "Ingreso del Paciente": 113,
         "En gestión AC": 70,
-        "Contactado por el Investigador": 1,
         "Visita Programada": 6,
+        "Contactado por el Investigador": 1,
         "Derivado": 3,
-        "Visita Cumplida": 1,
-        "Consentimiento Firmado": 1
+        "Consentimiento Firmado": 1,
+        "Visita Cumplida": 1
       },
       "total_backlog": 113,
       "total_wip": 82,
@@ -36197,9 +36197,9 @@
       "backlog": {
         "Ingreso del Paciente": 1,
         "En gestión AC": 50,
-        "Contactado por el Investigador": 2,
+        "Visita Cumplida": 1,
         "Visita Programada": 1,
-        "Visita Cumplida": 1
+        "Contactado por el Investigador": 2
       },
       "total_backlog": 1,
       "total_wip": 54,
@@ -36501,11 +36501,11 @@
       "backlog": {
         "En gestión AC": 23,
         "Ingreso del Paciente": 3,
-        "Derivado": 4,
-        "Randomizado": 3,
         "Consentimiento Firmado": 7,
         "Visita Cumplida": 2,
+        "Derivado": 4,
         "Contactado por el Investigador": 1,
+        "Randomizado": 3,
         "Visita Programada": 1
       },
       "total_backlog": 3,
@@ -36605,8 +36605,8 @@
       "backlog": {
         "Ingreso del Paciente": 89,
         "En gestión AC": 79,
-        "Derivado": 2,
-        "Pre Derivado": 1
+        "Pre Derivado": 1,
+        "Derivado": 2
       },
       "total_backlog": 89,
       "total_wip": 82,
@@ -36705,9 +36705,9 @@
       "backlog": {
         "Ingreso del Paciente": 6,
         "En gestión AC": 51,
-        "Derivado": 3,
-        "Visita Programada": 1,
         "Randomizado": 1,
+        "Visita Programada": 1,
+        "Derivado": 3,
         "Consentimiento Firmado": 1
       },
       "total_backlog": 6,
@@ -36806,13 +36806,13 @@
       "ingresos_hoy": 0,
       "backlog": {
         "Ingreso del Paciente": 87,
-        "Derivado": 9,
-        "Randomizado": 2,
         "En gestión AC": 97,
+        "Derivado": 9,
         "Visita Cumplida": 8,
         "Consentimiento Firmado": 4,
-        "Contactado por el Investigador": 3,
         "Visita Programada": 5,
+        "Contactado por el Investigador": 3,
+        "Randomizado": 2,
         "Pre Derivado": 1
       },
       "total_backlog": 87,
