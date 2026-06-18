@@ -1,4 +1,4 @@
-// Generado: 18/06/2026 10:46 hora Argentina
+// Generado: 18/06/2026 11:10 hora Argentina
 window.DASHBOARD_DATA = [
   {
     "name": "ARG-ALZ-KARUNA-BMS-ADEPT4",
@@ -1819,4 +1819,4 @@ window.DASHBOARD_DATA = [
     }
   }
 ];
-window.LAST_UPDATED = "18/06/2026 10:46";
+window.LAST_UPDATED = "18/06/2026 11:10";
