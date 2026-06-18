@@ -1,4 +1,4 @@
-// Generado: 18/06/2026 08:10 hora Argentina
+// Generado: 18/06/2026 10:46 hora Argentina
 window.DASHBOARD_DATA = [
   {
     "name": "ARG-ALZ-KARUNA-BMS-ADEPT4",
@@ -14,12 +14,12 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "Ingreso del Paciente": 1,
       "En gestión AC": 41,
-      "Randomizado": 2,
       "Visita Cumplida": 4,
-      "Derivado": 1,
+      "Randomizado": 2,
       "Consentimiento Firmado": 2,
-      "Contactado por el Investigador": 2,
-      "Visita Programada": 1
+      "Derivado": 1,
+      "Visita Programada": 1,
+      "Contactado por el Investigador": 2
     },
     "total_backlog": 1,
     "total_wip": 51,
@@ -108,26 +108,22 @@ window.DASHBOARD_DATA = [
         "fte": 8
       },
       {
-        "name": "Milagros  Tani",
-        "fte": 8
-      },
-      {
         "name": "Roxana Lorena Diaz",
         "fte": 8
       }
     ],
-    "total_fte": 24,
-    "fte_persons": 3,
+    "total_fte": 16,
+    "fte_persons": 2,
     "ingresos_hoy": 0,
     "backlog": {
       "En gestión AC": 266,
       "Ingreso del Paciente": 382,
+      "Contactado por el Investigador": 16,
       "Visita Programada": 11,
       "Randomizado": 6,
       "Consentimiento Firmado": 8,
-      "Contactado por el Investigador": 16,
-      "Visita Cumplida": 7,
-      "Derivado": 7
+      "Derivado": 7,
+      "Visita Cumplida": 7
     },
     "total_backlog": 382,
     "total_wip": 315,
@@ -234,8 +230,8 @@ window.DASHBOARD_DATA = [
       "Contactado por el Investigador": 2,
       "Visita Programada": 2,
       "Consentimiento Firmado": 2,
-      "Visita Cumplida": 1,
-      "Pre Derivado": 1
+      "Pre Derivado": 1,
+      "Visita Cumplida": 1
     },
     "total_backlog": 13,
     "total_wip": 109,
@@ -633,8 +629,8 @@ window.DASHBOARD_DATA = [
       "Visita Programada": 6,
       "Consentimiento Firmado": 1,
       "Visita Cumplida": 4,
-      "Contactado por el Investigador": 2,
       "Derivado": 1,
+      "Contactado por el Investigador": 2,
       "Pre Derivado": 1
     },
     "total_backlog": 0,
@@ -1018,10 +1014,10 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "Ingreso del Paciente": 113,
       "En gestión AC": 70,
-      "Visita Programada": 6,
       "Derivado": 3,
-      "Consentimiento Firmado": 1,
       "Visita Cumplida": 1,
+      "Visita Programada": 6,
+      "Consentimiento Firmado": 1,
       "Contactado por el Investigador": 1
     },
     "total_backlog": 113,
@@ -1125,8 +1121,8 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "Ingreso del Paciente": 1,
       "En gestión AC": 50,
-      "Visita Cumplida": 1,
       "Contactado por el Investigador": 2,
+      "Visita Cumplida": 1,
       "Visita Programada": 1
     },
     "total_backlog": 1,
@@ -1429,11 +1425,11 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "En gestión AC": 23,
       "Ingreso del Paciente": 3,
-      "Consentimiento Firmado": 7,
-      "Contactado por el Investigador": 1,
-      "Randomizado": 3,
       "Derivado": 4,
+      "Consentimiento Firmado": 7,
+      "Randomizado": 3,
       "Visita Cumplida": 2,
+      "Contactado por el Investigador": 1,
       "Visita Programada": 1
     },
     "total_backlog": 3,
@@ -1635,8 +1631,8 @@ window.DASHBOARD_DATA = [
       "En gestión AC": 51,
       "Visita Programada": 1,
       "Consentimiento Firmado": 1,
-      "Derivado": 3,
-      "Randomizado": 1
+      "Randomizado": 1,
+      "Derivado": 3
     },
     "total_backlog": 6,
     "total_wip": 56,
@@ -1734,13 +1730,13 @@ window.DASHBOARD_DATA = [
     "ingresos_hoy": 0,
     "backlog": {
       "Ingreso del Paciente": 87,
-      "Visita Programada": 5,
-      "En gestión AC": 97,
-      "Contactado por el Investigador": 3,
       "Consentimiento Firmado": 4,
+      "Contactado por el Investigador": 3,
+      "Derivado": 9,
+      "En gestión AC": 97,
       "Visita Cumplida": 8,
       "Randomizado": 2,
-      "Derivado": 9,
+      "Visita Programada": 5,
       "Pre Derivado": 1
     },
     "total_backlog": 87,
@@ -1823,4 +1819,4 @@ window.DASHBOARD_DATA = [
     }
   }
 ];
-window.LAST_UPDATED = "18/06/2026 08:10";
+window.LAST_UPDATED = "18/06/2026 10:46";
