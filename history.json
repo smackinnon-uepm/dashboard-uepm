@@ -40347,11 +40347,11 @@
         "En gestión AC": 248,
         "Ingreso del Paciente": 400,
         "Contactado por el Investigador": 17,
-        "Consentimiento Firmado": 8,
+        "Visita Programada": 12,
         "Visita Cumplida": 7,
+        "Consentimiento Firmado": 8,
         "Derivado": 9,
-        "Randomizado": 6,
-        "Visita Programada": 12
+        "Randomizado": 6
       },
       "total_backlog": 400,
       "total_wip": 301,
@@ -40454,12 +40454,12 @@
       "backlog": {
         "En gestión AC": 95,
         "Ingreso del Paciente": 16,
+        "Randomizado": 1,
         "Derivado": 6,
         "Consentimiento Firmado": 1,
         "Visita Cumplida": 2,
-        "Visita Programada": 1,
-        "Randomizado": 1,
-        "Contactado por el Investigador": 2
+        "Contactado por el Investigador": 2,
+        "Visita Programada": 1
       },
       "total_backlog": 16,
       "total_wip": 107,
@@ -40554,9 +40554,9 @@
       "backlog": {
         "En gestión AC": 63,
         "Ingreso del Paciente": 29,
+        "Contactado por el Investigador": 8,
         "Visita Cumplida": 2,
         "Consentimiento Firmado": 1,
-        "Contactado por el Investigador": 8,
         "Randomizado": 2,
         "Visita Programada": 1
       },
@@ -40660,9 +40660,9 @@
       },
       "total_backlog": 2,
       "total_wip": 5,
-      "gina_hoy": 0,
-      "gina_total": 24,
-      "gina_perdidos": 7,
+      "gina_hoy": 1,
+      "gina_total": 25,
+      "gina_perdidos": 8,
       "gina_gestionados": 16,
       "avg_days_process": 5.4,
       "oldest_ingreso": "2026-06-19",
@@ -40849,17 +40849,17 @@
       ],
       "total_fte": 16,
       "fte_persons": 2,
-      "ingresos_hoy": 0,
+      "ingresos_hoy": 2,
       "backlog": {
-        "Ingreso del Paciente": 46,
+        "Ingreso del Paciente": 48,
         "En gestión AC": 87,
-        "Visita Programada": 8,
         "Consentimiento Firmado": 1,
         "Pre Derivado": 2,
+        "Visita Programada": 8,
         "Visita Cumplida": 4,
         "Contactado por el Investigador": 2
       },
-      "total_backlog": 46,
+      "total_backlog": 48,
       "total_wip": 104,
       "gina_hoy": 0,
       "gina_total": 0,
@@ -40900,7 +40900,7 @@
           0,
           11,
           46,
-          46
+          48
         ],
         "wip": [
           207,
@@ -40934,7 +40934,7 @@
           33,
           17,
           35,
-          0
+          2
         ]
       }
     },
@@ -41237,18 +41237,18 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 3,
+      "ingresos_hoy": 4,
       "backlog": {
-        "Ingreso del Paciente": 126,
+        "Ingreso del Paciente": 127,
         "En gestión AC": 83,
+        "Consentimiento Firmado": 3,
         "Visita Programada": 4,
-        "Contactado por el Investigador": 2,
-        "Consentimiento Firmado": 3
+        "Contactado por el Investigador": 2
       },
-      "total_backlog": 126,
+      "total_backlog": 127,
       "total_wip": 92,
-      "gina_hoy": 3,
-      "gina_total": 611,
+      "gina_hoy": 4,
+      "gina_total": 612,
       "gina_perdidos": 308,
       "gina_gestionados": 179,
       "avg_days_process": 6,
@@ -41286,7 +41286,7 @@
           105,
           110,
           123,
-          126
+          127
         ],
         "wip": [
           88,
@@ -41320,7 +41320,7 @@
           8,
           6,
           13,
-          3
+          4
         ]
       }
     },
@@ -41346,10 +41346,10 @@
       "backlog": {
         "Ingreso del Paciente": 4,
         "En gestión AC": 35,
-        "Consentimiento Firmado": 1,
-        "Derivado": 2,
         "Contactado por el Investigador": 2,
-        "Visita Cumplida": 1
+        "Consentimiento Firmado": 1,
+        "Visita Cumplida": 1,
+        "Derivado": 2
       },
       "total_backlog": 4,
       "total_wip": 41,
@@ -41443,7 +41443,7 @@
       "total_backlog": 47,
       "total_wip": 40,
       "gina_hoy": 2,
-      "gina_total": 238,
+      "gina_total": 239,
       "gina_perdidos": 155,
       "gina_gestionados": 43,
       "avg_days_process": 4,
@@ -41651,11 +41651,11 @@
       "backlog": {
         "En gestión AC": 20,
         "Ingreso del Paciente": 2,
-        "Randomizado": 3,
         "Derivado": 4,
-        "Visita Cumplida": 2,
-        "Consentimiento Firmado": 7,
         "Contactado por el Investigador": 1,
+        "Randomizado": 3,
+        "Consentimiento Firmado": 7,
+        "Visita Cumplida": 2,
         "Visita Programada": 1
       },
       "total_backlog": 2,
@@ -41751,18 +41751,18 @@
       ],
       "total_fte": 12,
       "fte_persons": 1.5,
-      "ingresos_hoy": 1,
+      "ingresos_hoy": 2,
       "backlog": {
-        "Ingreso del Paciente": 107,
+        "Ingreso del Paciente": 108,
         "En gestión AC": 83,
-        "Derivado": 3,
         "Visita Cumplida": 1,
+        "Derivado": 3,
         "Pre Derivado": 1
       },
-      "total_backlog": 107,
+      "total_backlog": 108,
       "total_wip": 88,
-      "gina_hoy": 1,
-      "gina_total": 436,
+      "gina_hoy": 2,
+      "gina_total": 437,
       "gina_perdidos": 222,
       "gina_gestionados": 128,
       "avg_days_process": 9,
@@ -41800,7 +41800,7 @@
           84,
           89,
           106,
-          107
+          108
         ],
         "wip": [
           73,
@@ -41834,7 +41834,7 @@
           6,
           11,
           17,
-          1
+          2
         ]
       }
     },
@@ -41956,11 +41956,11 @@
       "ingresos_hoy": 2,
       "backlog": {
         "Ingreso del Paciente": 73,
-        "Contactado por el Investigador": 3,
-        "Consentimiento Firmado": 4,
         "En gestión AC": 94,
-        "Derivado": 6,
         "Visita Cumplida": 9,
+        "Consentimiento Firmado": 4,
+        "Derivado": 6,
+        "Contactado por el Investigador": 3,
         "Randomizado": 2,
         "Pre Derivado": 1
       },
