@@ -1,4 +1,4 @@
-// Generado: 01/07/2026 13:32 hora Argentina
+// Generado: 01/07/2026 14:10 hora Argentina
 window.DASHBOARD_DATA = [
   {
     "name": "ARG-ALZH-BMS-ADAGIO1",
@@ -2282,4 +2282,4 @@ window.DASHBOARD_DATA = [
     }
   }
 ];
-window.LAST_UPDATED = "01/07/2026 13:32";
+window.LAST_UPDATED = "01/07/2026 14:10";
