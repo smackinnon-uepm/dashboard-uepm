@@ -1,4 +1,4 @@
-// Generado: 21/07/2026 20:10 hora Argentina
+// Generado: 22/07/2026 05:10 hora Argentina
 window.DASHBOARD_DATA = [
   {
     "name": "ARG-ALZH-BMS-ADAGIO1",
@@ -36,14 +36,13 @@ window.DASHBOARD_DATA = [
     "total_backlog": 9,
     "total_wip": 19,
     "gina_hoy": 0,
-    "gina_total": 12,
+    "gina_total": 13,
     "gina_perdidos": 0,
-    "gina_gestionados": 12,
-    "avg_days_process": 18.3,
+    "gina_gestionados": 13,
+    "avg_days_process": 18.6,
     "oldest_ingreso": "2026-07-07",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -57,10 +56,10 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
-        2,
         2,
         2,
         2,
@@ -74,10 +73,10 @@ window.DASHBOARD_DATA = [
         8,
         8,
         9,
+        9,
         9
       ],
       "wip": [
-        25,
         24,
         24,
         24,
@@ -91,6 +90,7 @@ window.DASHBOARD_DATA = [
         21,
         21,
         20,
+        19,
         19
       ],
       "ingresos": [
@@ -131,7 +131,6 @@ window.DASHBOARD_DATA = [
     "oldest_ingreso": null,
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -145,7 +144,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -230,23 +230,22 @@ window.DASHBOARD_DATA = [
     "backlog": {
       "En gestión AC": 17,
       "Visita Cumplida": 3,
-      "Pre Derivado": 1,
+      "Contactado por el Investigador": 1,
       "Randomizado": 4,
-      "Consentimiento Firmado": 3,
+      "Consentimiento Firmado": 1,
       "Visita Programada": 1,
-      "Contactado por el Investigador": 1
+      "Pre Derivado": 1
     },
     "total_backlog": 0,
-    "total_wip": 26,
+    "total_wip": 24,
     "gina_hoy": 0,
     "gina_total": 13,
     "gina_perdidos": 0,
     "gina_gestionados": 13,
-    "avg_days_process": 12.8,
+    "avg_days_process": 12.9,
     "oldest_ingreso": null,
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -260,7 +259,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -280,21 +280,21 @@ window.DASHBOARD_DATA = [
         0
       ],
       "wip": [
-        36,
-        36,
         35,
-        32,
-        32,
-        32,
-        33,
+        34,
+        31,
+        31,
+        31,
         32,
         31,
-        29,
-        29,
-        29,
-        29,
-        26,
-        26
+        30,
+        28,
+        28,
+        28,
+        28,
+        24,
+        24,
+        24
       ],
       "ingresos": [
         0,
@@ -333,22 +333,21 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 6,
     "fte_persons": 0.75,
-    "ingresos_hoy": 2,
+    "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 18,
+      "Ingreso del Paciente": 19,
       "En gestión AC": 10
     },
-    "total_backlog": 18,
+    "total_backlog": 19,
     "total_wip": 10,
-    "gina_hoy": 7,
-    "gina_total": 137,
-    "gina_perdidos": 58,
-    "gina_gestionados": 69,
+    "gina_hoy": 0,
+    "gina_total": 140,
+    "gina_perdidos": 62,
+    "gina_gestionados": 68,
     "avg_days_process": 6.6,
     "oldest_ingreso": "2026-07-16",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -362,10 +361,10 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
-        0,
         0,
         0,
         0,
@@ -379,10 +378,10 @@ window.DASHBOARD_DATA = [
         8,
         9,
         12,
-        18
+        19,
+        19
       ],
       "wip": [
-        31,
         27,
         29,
         31,
@@ -393,13 +392,13 @@ window.DASHBOARD_DATA = [
         26,
         22,
         18,
-        21,
+        23,
         23,
         15,
+        11,
         10
       ],
       "ingresos": [
-        3,
         2,
         3,
         5,
@@ -413,7 +412,8 @@ window.DASHBOARD_DATA = [
         4,
         5,
         5,
-        2
+        2,
+        0
       ]
     }
   },
@@ -435,22 +435,21 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 6,
     "fte_persons": 0.75,
-    "ingresos_hoy": 3,
+    "ingresos_hoy": 2,
     "backlog": {
-      "Ingreso del Paciente": 14,
-      "En gestión AC": 24
+      "Ingreso del Paciente": 19,
+      "En gestión AC": 23
     },
-    "total_backlog": 14,
-    "total_wip": 24,
-    "gina_hoy": 4,
-    "gina_total": 235,
+    "total_backlog": 19,
+    "total_wip": 23,
+    "gina_hoy": 3,
+    "gina_total": 238,
     "gina_perdidos": 80,
     "gina_gestionados": 142,
     "avg_days_process": 5.9,
     "oldest_ingreso": "2026-07-18",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -464,7 +463,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -477,45 +477,45 @@ window.DASHBOARD_DATA = [
         0,
         0,
         0,
-        0,
         6,
         8,
         11,
-        14
+        16,
+        19
       ],
       "wip": [
-        39,
         35,
-        45,
-        60,
-        64,
+        46,
+        61,
         66,
-        62,
-        60,
-        52,
+        68,
+        63,
+        61,
+        53,
         38,
         34,
         38,
         50,
         34,
-        24
+        24,
+        23
       ],
       "ingresos": [
-        1,
         3,
-        11,
+        12,
         12,
         4,
         8,
         8,
         6,
         4,
-        1,
-        3,
+        0,
+        4,
         8,
         12,
         4,
-        3
+        4,
+        2
       ]
     }
   },
@@ -557,28 +557,27 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 21,
     "fte_persons": 2.63,
-    "ingresos_hoy": 3,
+    "ingresos_hoy": 1,
     "backlog": {
       "En gestión AC": 344,
-      "Ingreso del Paciente": 158,
-      "Visita Programada": 11,
-      "Contactado por el Investigador": 11,
+      "Ingreso del Paciente": 166,
       "Consentimiento Firmado": 14,
+      "Contactado por el Investigador": 12,
       "Randomizado": 15,
-      "Visita Cumplida": 9,
-      "Derivado": 6
+      "Derivado": 6,
+      "Visita Programada": 11,
+      "Visita Cumplida": 10
     },
-    "total_backlog": 158,
-    "total_wip": 395,
-    "gina_hoy": 26,
-    "gina_total": 3438,
-    "gina_perdidos": 2077,
-    "gina_gestionados": 1205,
-    "avg_days_process": 17.9,
+    "total_backlog": 166,
+    "total_wip": 397,
+    "gina_hoy": 5,
+    "gina_total": 3440,
+    "gina_perdidos": 2074,
+    "gina_gestionados": 1207,
+    "avg_days_process": 18,
     "oldest_ingreso": "2026-05-24",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -592,58 +591,59 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
+        134,
         135,
         135,
-        136,
-        136,
-        136,
-        136,
-        136,
-        136,
-        136,
-        136,
-        136,
-        136,
-        138,
-        149,
-        158
+        135,
+        135,
+        135,
+        135,
+        135,
+        135,
+        135,
+        135,
+        137,
+        148,
+        162,
+        166
       ],
       "wip": [
-        497,
-        499,
-        495,
-        495,
-        508,
-        522,
-        530,
+        509,
+        504,
+        504,
         516,
-        493,
-        476,
-        455,
-        460,
-        462,
-        446,
-        395
+        532,
+        536,
+        520,
+        498,
+        481,
+        458,
+        465,
+        469,
+        453,
+        398,
+        397
       ],
       "ingresos": [
-        15,
-        21,
+        23,
         10,
         16,
         16,
         15,
-        19,
+        18,
         20,
         8,
-        14,
+        13,
         12,
-        19,
-        9,
+        20,
+        10,
         17,
-        3
+        6,
+        1
       ]
     }
   },
@@ -669,27 +669,26 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 13,
     "fte_persons": 1.63,
-    "ingresos_hoy": 10,
+    "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 122,
-      "En gestión AC": 127,
+      "Ingreso del Paciente": 125,
+      "En gestión AC": 124,
       "Derivado": 10,
+      "Visita Cumplida": 5,
       "Contactado por el Investigador": 2,
       "Visita Programada": 2,
-      "Visita Cumplida": 5,
       "Randomizado": 1
     },
-    "total_backlog": 122,
-    "total_wip": 146,
-    "gina_hoy": 12,
-    "gina_total": 917,
+    "total_backlog": 125,
+    "total_wip": 143,
+    "gina_hoy": 0,
+    "gina_total": 920,
     "gina_perdidos": 390,
     "gina_gestionados": 404,
     "avg_days_process": 17.6,
     "oldest_ingreso": "2026-07-07",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -703,58 +702,59 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
-        8,
         25,
-        37,
-        44,
+        36,
+        43,
         54,
         66,
-        74,
+        73,
+        79,
         81,
-        83,
-        87,
-        100,
-        106,
-        111,
-        115,
-        122
+        84,
+        97,
+        103,
+        108,
+        112,
+        125,
+        125
       ],
       "wip": [
-        146,
-        134,
-        137,
+        135,
+        138,
         137,
         138,
+        148,
+        145,
+        143,
+        142,
+        150,
+        141,
+        141,
         147,
         147,
-        146,
-        145,
-        154,
-        145,
-        145,
-        152,
-        151,
-        146
+        144,
+        143
       ],
       "ingresos": [
-        14,
-        18,
-        18,
-        9,
-        13,
         18,
         17,
-        13,
+        9,
+        14,
+        19,
+        16,
+        11,
         6,
+        11,
         13,
-        13,
         9,
         9,
         9,
-        10
+        16,
+        0
       ]
     }
   },
@@ -782,18 +782,18 @@ window.DASHBOARD_DATA = [
     "fte_persons": 2,
     "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 3,
-      "En gestión AC": 88,
-      "Consentimiento Firmado": 1,
-      "Visita Programada": 5,
+      "Ingreso del Paciente": 18,
+      "En gestión AC": 86,
       "Derivado": 1,
+      "Visita Programada": 5,
+      "Consentimiento Firmado": 1,
       "Visita Cumplida": 1,
       "Contactado por el Investigador": 4,
       "Pre Derivado": 1,
       "Randomizado": 2
     },
-    "total_backlog": 3,
-    "total_wip": 101,
+    "total_backlog": 18,
+    "total_wip": 99,
     "gina_hoy": 0,
     "gina_total": 0,
     "gina_perdidos": 0,
@@ -802,7 +802,6 @@ window.DASHBOARD_DATA = [
     "oldest_ingreso": "2026-06-16",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -816,7 +815,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         1,
@@ -832,25 +832,25 @@ window.DASHBOARD_DATA = [
         1,
         1,
         1,
-        1,
-        3
+        16,
+        18
       ],
       "wip": [
-        156,
-        139,
-        121,
-        122,
+        140,
+        123,
+        123,
+        135,
+        153,
+        146,
         133,
-        149,
-        144,
-        131,
-        119,
-        101,
-        99,
+        122,
+        102,
+        100,
         112,
-        120,
-        118,
-        101
+        119,
+        116,
+        99,
+        99
       ],
       "ingresos": [
         0,
@@ -896,15 +896,15 @@ window.DASHBOARD_DATA = [
     "ingresos_hoy": 0,
     "backlog": {
       "En gestión AC": 63,
-      "Ingreso del Paciente": 3,
+      "Ingreso del Paciente": 4,
       "Consentimiento Firmado": 3,
       "Derivado": 4,
-      "Visita Programada": 2,
       "Pre Derivado": 1,
-      "Visita Cumplida": 1
+      "Visita Cumplida": 1,
+      "Visita Programada": 1
     },
-    "total_backlog": 3,
-    "total_wip": 74,
+    "total_backlog": 4,
+    "total_wip": 73,
     "gina_hoy": 0,
     "gina_total": 0,
     "gina_perdidos": 0,
@@ -913,7 +913,6 @@ window.DASHBOARD_DATA = [
     "oldest_ingreso": "2026-07-21",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -927,7 +926,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -943,25 +943,25 @@ window.DASHBOARD_DATA = [
         0,
         0,
         0,
-        0,
-        3
+        4,
+        4
       ],
       "wip": [
-        140,
         120,
-        106,
-        106,
-        123,
-        133,
-        108,
-        96,
+        104,
+        104,
+        121,
+        131,
+        105,
+        94,
+        84,
+        62,
+        68,
+        78,
         86,
-        64,
-        69,
-        79,
-        87,
-        90,
-        74
+        89,
+        73,
+        73
       ],
       "ingresos": [
         0,
@@ -996,23 +996,22 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 5.5,
     "fte_persons": 0.69,
-    "ingresos_hoy": 4,
+    "ingresos_hoy": 0,
     "backlog": {
       "Pre Derivado": 1,
-      "Ingreso del Paciente": 7,
+      "Ingreso del Paciente": 11,
       "En gestión AC": 18
     },
-    "total_backlog": 7,
+    "total_backlog": 11,
     "total_wip": 19,
-    "gina_hoy": 15,
-    "gina_total": 125,
-    "gina_perdidos": 51,
+    "gina_hoy": 1,
+    "gina_total": 129,
+    "gina_perdidos": 54,
     "gina_gestionados": 72,
     "avg_days_process": 6.7,
     "oldest_ingreso": "2026-07-20",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -1026,7 +1025,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -1041,12 +1041,11 @@ window.DASHBOARD_DATA = [
         0,
         0,
         0,
-        0,
         2,
-        7
+        11,
+        11
       ],
       "wip": [
-        17,
         16,
         17,
         12,
@@ -1060,10 +1059,10 @@ window.DASHBOARD_DATA = [
         16,
         18,
         20,
+        19,
         19
       ],
       "ingresos": [
-        2,
         1,
         4,
         0,
@@ -1077,7 +1076,8 @@ window.DASHBOARD_DATA = [
         3,
         2,
         5,
-        4
+        5,
+        0
       ]
     }
   },
@@ -1095,23 +1095,22 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 5.5,
     "fte_persons": 0.69,
-    "ingresos_hoy": 11,
+    "ingresos_hoy": 1,
     "backlog": {
-      "Ingreso del Paciente": 12,
-      "En gestión AC": 37,
+      "Ingreso del Paciente": 21,
+      "En gestión AC": 39,
       "Derivado": 2
     },
-    "total_backlog": 12,
-    "total_wip": 39,
-    "gina_hoy": 18,
-    "gina_total": 156,
-    "gina_perdidos": 23,
-    "gina_gestionados": 127,
+    "total_backlog": 21,
+    "total_wip": 41,
+    "gina_hoy": 1,
+    "gina_total": 168,
+    "gina_perdidos": 24,
+    "gina_gestionados": 129,
     "avg_days_process": 7.4,
     "oldest_ingreso": "2026-07-21",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -1125,7 +1124,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -1141,28 +1141,27 @@ window.DASHBOARD_DATA = [
         0,
         0,
         0,
-        0,
-        12
+        20,
+        21
       ],
       "wip": [
-        30,
-        30,
-        29,
         31,
-        33,
+        30,
+        32,
+        34,
+        37,
         35,
-        33,
+        32,
         30,
-        29,
-        29,
         30,
-        36,
-        38,
-        44,
-        39
+        31,
+        37,
+        39,
+        46,
+        41,
+        41
       ],
       "ingresos": [
-        1,
         2,
         3,
         4,
@@ -1175,8 +1174,9 @@ window.DASHBOARD_DATA = [
         2,
         4,
         5,
-        8,
-        11
+        9,
+        19,
+        1
       ]
     }
   },
@@ -1200,16 +1200,16 @@ window.DASHBOARD_DATA = [
     "fte_persons": 2.5,
     "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 1,
-      "En gestión AC": 112,
-      "Derivado": 4,
+      "Ingreso del Paciente": 13,
+      "En gestión AC": 111,
+      "Derivado": 3,
       "Visita Programada": 5,
       "Contactado por el Investigador": 2,
       "Visita Cumplida": 3,
       "Consentimiento Firmado": 1
     },
-    "total_backlog": 1,
-    "total_wip": 127,
+    "total_backlog": 13,
+    "total_wip": 125,
     "gina_hoy": 0,
     "gina_total": 1,
     "gina_perdidos": 0,
@@ -1218,7 +1218,6 @@ window.DASHBOARD_DATA = [
     "oldest_ingreso": "2026-07-21",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -1232,12 +1231,12 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
         0,
-        0,
         1,
         1,
         1,
@@ -1249,24 +1248,25 @@ window.DASHBOARD_DATA = [
         0,
         0,
         0,
-        1
+        12,
+        13
       ],
       "wip": [
-        203,
-        191,
-        152,
-        139,
-        161,
-        179,
-        160,
-        158,
+        187,
+        148,
+        136,
+        157,
+        177,
+        157,
+        157,
         146,
-        147,
-        134,
-        161,
-        178,
-        149,
-        127
+        148,
+        135,
+        163,
+        179,
+        148,
+        125,
+        125
       ],
       "ingresos": [
         0,
@@ -1275,8 +1275,8 @@ window.DASHBOARD_DATA = [
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1319,7 +1319,6 @@ window.DASHBOARD_DATA = [
     "oldest_ingreso": null,
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -1333,7 +1332,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -1354,7 +1354,6 @@ window.DASHBOARD_DATA = [
       ],
       "wip": [
         4,
-        4,
         3,
         3,
         3,
@@ -1363,6 +1362,7 @@ window.DASHBOARD_DATA = [
         3,
         3,
         3,
+        2,
         2,
         2,
         2,
@@ -1424,7 +1424,6 @@ window.DASHBOARD_DATA = [
     "oldest_ingreso": null,
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -1438,7 +1437,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -1462,12 +1462,12 @@ window.DASHBOARD_DATA = [
         4,
         4,
         4,
-        4,
         6,
         7,
         4,
         5,
         5,
+        3,
         3,
         3,
         3,
@@ -1513,21 +1513,20 @@ window.DASHBOARD_DATA = [
     "fte_persons": 0.75,
     "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 2,
-      "En gestión AC": 4,
+      "Ingreso del Paciente": 3,
+      "En gestión AC": 6,
       "Derivado": 1
     },
-    "total_backlog": 2,
-    "total_wip": 5,
+    "total_backlog": 3,
+    "total_wip": 7,
     "gina_hoy": 0,
-    "gina_total": 52,
+    "gina_total": 53,
     "gina_perdidos": 10,
-    "gina_gestionados": 42,
-    "avg_days_process": 14,
+    "gina_gestionados": 43,
+    "avg_days_process": 14.3,
     "oldest_ingreso": "2026-07-17",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -1541,7 +1540,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -1553,34 +1553,34 @@ window.DASHBOARD_DATA = [
         0,
         0,
         0,
-        0,
         1,
         1,
         2,
         2,
-        2
+        3,
+        3
       ],
       "wip": [
-        21,
+        24,
+        26,
+        26,
+        27,
+        27,
         22,
-        24,
-        24,
-        25,
-        25,
-        20,
+        14,
+        13,
+        13,
         12,
-        11,
-        11,
-        10,
-        10,
-        10,
-        5,
-        5
+        12,
+        12,
+        7,
+        7,
+        7
       ],
       "ingresos": [
-        1,
         3,
         1,
+        0,
         0,
         0,
         0,
@@ -1614,25 +1614,24 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 6,
     "fte_persons": 0.75,
-    "ingresos_hoy": 4,
+    "ingresos_hoy": 1,
     "backlog": {
-      "Ingreso del Paciente": 53,
-      "Pre Derivado": 5,
+      "Ingreso del Paciente": 63,
       "Derivado": 7,
-      "En gestión AC": 35,
-      "Visita Programada": 2
+      "Pre Derivado": 5,
+      "Visita Programada": 3,
+      "En gestión AC": 35
     },
-    "total_backlog": 53,
-    "total_wip": 49,
-    "gina_hoy": 9,
-    "gina_total": 318,
-    "gina_perdidos": 48,
+    "total_backlog": 63,
+    "total_wip": 50,
+    "gina_hoy": 1,
+    "gina_total": 325,
+    "gina_perdidos": 47,
     "gina_gestionados": 228,
     "avg_days_process": 8.4,
     "oldest_ingreso": "2026-07-02",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -1646,7 +1645,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         3,
@@ -1658,32 +1658,31 @@ window.DASHBOARD_DATA = [
         3,
         3,
         3,
-        3,
         8,
-        28,
-        35,
-        44,
-        53
+        29,
+        37,
+        46,
+        62,
+        63
       ],
       "wip": [
         46,
-        45,
-        45,
         46,
-        49,
+        47,
+        50,
+        52,
+        50,
+        46,
+        50,
+        46,
+        44,
         51,
-        49,
-        44,
-        48,
-        44,
-        42,
-        49,
-        70,
-        62,
-        49
+        71,
+        64,
+        50,
+        50
       ],
       "ingresos": [
-        3,
         3,
         4,
         4,
@@ -1694,10 +1693,11 @@ window.DASHBOARD_DATA = [
         6,
         0,
         5,
-        24,
+        25,
         27,
         12,
-        4
+        9,
+        1
       ]
     }
   },
@@ -1739,28 +1739,27 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 19,
     "fte_persons": 2.38,
-    "ingresos_hoy": 9,
+    "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 64,
-      "En gestión AC": 197,
+      "Ingreso del Paciente": 77,
+      "En gestión AC": 194,
+      "Derivado": 9,
       "Contactado por el Investigador": 4,
-      "Derivado": 8,
       "Pre Derivado": 1,
       "Visita Programada": 2,
-      "Randomizado": 4,
-      "Consentimiento Firmado": 4
+      "Consentimiento Firmado": 4,
+      "Randomizado": 4
     },
-    "total_backlog": 64,
-    "total_wip": 216,
-    "gina_hoy": 37,
-    "gina_total": 1752,
-    "gina_perdidos": 1138,
-    "gina_gestionados": 553,
+    "total_backlog": 77,
+    "total_wip": 214,
+    "gina_hoy": 0,
+    "gina_total": 1765,
+    "gina_perdidos": 1142,
+    "gina_gestionados": 560,
     "avg_days_process": 12,
     "oldest_ingreso": "2026-06-07",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -1774,10 +1773,10 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
-        39,
         39,
         39,
         39,
@@ -1791,41 +1790,42 @@ window.DASHBOARD_DATA = [
         40,
         41,
         47,
-        64
+        77,
+        77
       ],
       "wip": [
-        216,
         210,
         219,
         218,
-        238,
-        256,
-        256,
+        237,
+        255,
+        254,
         254,
         250,
         259,
         234,
-        236,
+        235,
         254,
-        250,
-        216
+        249,
+        217,
+        214
       ],
       "ingresos": [
+        11,
+        16,
+        11,
         14,
-        11,
-        16,
-        11,
-        15,
         12,
-        16,
-        11,
+        15,
+        13,
         8,
         8,
         4,
-        7,
+        6,
         17,
-        8,
-        9
+        7,
+        19,
+        0
       ]
     }
   },
@@ -1851,28 +1851,27 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 13,
     "fte_persons": 1.63,
-    "ingresos_hoy": 1,
+    "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 14,
+      "Ingreso del Paciente": 15,
       "En gestión AC": 64,
-      "Visita Cumplida": 1,
       "Derivado": 2,
       "Visita Programada": 1,
-      "Randomizado": 1,
+      "Visita Cumplida": 1,
+      "Contactado por el Investigador": 1,
       "Pre Derivado": 1,
-      "Contactado por el Investigador": 1
+      "Randomizado": 1
     },
-    "total_backlog": 14,
+    "total_backlog": 15,
     "total_wip": 70,
-    "gina_hoy": 3,
-    "gina_total": 399,
-    "gina_perdidos": 143,
-    "gina_gestionados": 243,
+    "gina_hoy": 0,
+    "gina_total": 398,
+    "gina_perdidos": 141,
+    "gina_gestionados": 242,
     "avg_days_process": 15.1,
     "oldest_ingreso": "2026-07-19",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -1886,7 +1885,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -1900,33 +1900,32 @@ window.DASHBOARD_DATA = [
         0,
         0,
         0,
-        0,
-        4,
-        13,
-        14
+        5,
+        14,
+        15,
+        15
       ],
       "wip": [
-        71,
         70,
         68,
+        83,
+        89,
+        94,
+        97,
         84,
-        90,
-        95,
-        98,
+        82,
+        82,
+        84,
+        89,
+        92,
         85,
-        83,
-        83,
-        85,
-        90,
-        93,
-        86,
+        70,
         70
       ],
       "ingresos": [
-        9,
         7,
         6,
-        11,
+        10,
         6,
         8,
         6,
@@ -1935,9 +1934,10 @@ window.DASHBOARD_DATA = [
         5,
         10,
         5,
-        8,
         9,
-        1
+        9,
+        2,
+        0
       ]
     }
   },
@@ -1979,24 +1979,23 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 17,
     "fte_persons": 2.13,
-    "ingresos_hoy": 3,
+    "ingresos_hoy": 0,
     "backlog": {
-      "En gestión AC": 136,
-      "Ingreso del Paciente": 16,
+      "Ingreso del Paciente": 19,
+      "En gestión AC": 137,
       "Consentimiento Firmado": 1,
       "Derivado": 3
     },
-    "total_backlog": 16,
-    "total_wip": 140,
-    "gina_hoy": 17,
-    "gina_total": 1101,
-    "gina_perdidos": 792,
-    "gina_gestionados": 295,
-    "avg_days_process": 8.7,
+    "total_backlog": 19,
+    "total_wip": 141,
+    "gina_hoy": 1,
+    "gina_total": 1103,
+    "gina_perdidos": 797,
+    "gina_gestionados": 290,
+    "avg_days_process": 8.6,
     "oldest_ingreso": "2026-06-19",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -2010,7 +2009,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         3,
@@ -2025,29 +2025,28 @@ window.DASHBOARD_DATA = [
         3,
         3,
         3,
-        3,
         10,
-        16
+        19,
+        19
       ],
       "wip": [
-        156,
         175,
-        176,
+        175,
         171,
         185,
         197,
         202,
         186,
-        163,
-        159,
+        164,
+        160,
         145,
         156,
-        164,
-        164,
-        140
+        165,
+        163,
+        142,
+        141
       ],
       "ingresos": [
-        15,
         19,
         17,
         9,
@@ -2055,13 +2054,14 @@ window.DASHBOARD_DATA = [
         8,
         10,
         4,
-        3,
         4,
+        3,
         5,
         6,
         6,
-        8,
-        3
+        7,
+        4,
+        0
       ]
     }
   },
@@ -2085,21 +2085,20 @@ window.DASHBOARD_DATA = [
     "fte_persons": 0.88,
     "ingresos_hoy": 1,
     "backlog": {
-      "Ingreso del Paciente": 34,
+      "Ingreso del Paciente": 37,
       "En gestión AC": 47,
       "Derivado": 3
     },
-    "total_backlog": 34,
+    "total_backlog": 37,
     "total_wip": 50,
-    "gina_hoy": 5,
-    "gina_total": 279,
+    "gina_hoy": 2,
+    "gina_total": 280,
     "gina_perdidos": 125,
-    "gina_gestionados": 123,
-    "avg_days_process": 10.3,
+    "gina_gestionados": 122,
+    "avg_days_process": 9.9,
     "oldest_ingreso": "2026-07-10",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -2113,10 +2112,10 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
-        0,
         0,
         0,
         1,
@@ -2127,13 +2126,13 @@ window.DASHBOARD_DATA = [
         12,
         17,
         23,
-        26,
+        25,
         28,
         31,
-        34
+        36,
+        37
       ],
       "wip": [
-        43,
         48,
         58,
         56,
@@ -2147,10 +2146,10 @@ window.DASHBOARD_DATA = [
         54,
         54,
         53,
+        50,
         50
       ],
       "ingresos": [
-        7,
         7,
         11,
         2,
@@ -2161,9 +2160,10 @@ window.DASHBOARD_DATA = [
         4,
         5,
         7,
+        2,
+        4,
         3,
-        3,
-        3,
+        2,
         1
       ]
     }
@@ -2197,25 +2197,23 @@ window.DASHBOARD_DATA = [
     "ingresos_hoy": 0,
     "backlog": {
       "Randomizado": 4,
-      "En gestión AC": 12,
+      "En gestión AC": 11,
       "Derivado": 2,
-      "Contactado por el Investigador": 1,
-      "Visita Cumplida": 2,
+      "Visita Cumplida": 1,
       "Consentimiento Firmado": 4,
-      "Ingreso del Paciente": 3,
+      "Ingreso del Paciente": 4,
       "Visita Programada": 1
     },
-    "total_backlog": 3,
-    "total_wip": 22,
+    "total_backlog": 4,
+    "total_wip": 19,
     "gina_hoy": 0,
     "gina_total": 0,
     "gina_perdidos": 0,
     "gina_gestionados": 0,
-    "avg_days_process": 27.4,
+    "avg_days_process": 27.3,
     "oldest_ingreso": "2026-07-19",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -2229,7 +2227,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -2243,27 +2242,27 @@ window.DASHBOARD_DATA = [
         0,
         0,
         0,
-        0,
         3,
         3,
-        3
+        4,
+        4
       ],
       "wip": [
-        33,
-        32,
-        31,
-        31,
-        31,
-        31,
-        27,
-        27,
+        29,
+        28,
+        28,
+        28,
+        28,
         25,
-        24,
-        24,
-        24,
-        24,
+        25,
         23,
-        22
+        22,
+        21,
+        21,
+        21,
+        20,
+        19,
+        19
       ],
       "ingresos": [
         0,
@@ -2326,26 +2325,25 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 21,
     "fte_persons": 2.63,
-    "ingresos_hoy": 8,
+    "ingresos_hoy": 4,
     "backlog": {
-      "En gestión AC": 196,
-      "Ingreso del Paciente": 13,
-      "Derivado": 20,
-      "Visita Cumplida": 1,
+      "Ingreso del Paciente": 22,
+      "En gestión AC": 190,
+      "Derivado": 23,
       "Visita Programada": 1,
-      "Contactado por el Investigador": 1
+      "Contactado por el Investigador": 1,
+      "Visita Cumplida": 1
     },
-    "total_backlog": 13,
-    "total_wip": 219,
-    "gina_hoy": 22,
-    "gina_total": 1243,
-    "gina_perdidos": 747,
-    "gina_gestionados": 468,
+    "total_backlog": 22,
+    "total_wip": 216,
+    "gina_hoy": 4,
+    "gina_total": 1245,
+    "gina_perdidos": 741,
+    "gina_gestionados": 483,
     "avg_days_process": 12.8,
     "oldest_ingreso": "2026-06-13",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -2359,7 +2357,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         1,
@@ -2374,32 +2373,31 @@ window.DASHBOARD_DATA = [
         1,
         1,
         1,
-        1,
         4,
-        13
+        18,
+        22
       ],
       "wip": [
+        222,
         228,
-        223,
-        230,
+        233,
         234,
-        236,
-        239,
-        245,
-        238,
-        228,
+        237,
+        244,
+        237,
+        227,
         221,
-        227,
-        227,
-        232,
+        225,
+        226,
+        231,
         236,
-        219
+        217,
+        216
       ],
       "ingresos": [
-        11,
-        6,
+        7,
         14,
-        12,
+        13,
         7,
         9,
         8,
@@ -2409,8 +2407,9 @@ window.DASHBOARD_DATA = [
         9,
         5,
         8,
-        15,
-        8
+        16,
+        10,
+        4
       ]
     }
   },
@@ -2432,25 +2431,24 @@ window.DASHBOARD_DATA = [
     ],
     "total_fte": 7,
     "fte_persons": 0.88,
-    "ingresos_hoy": 4,
+    "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 37,
-      "En gestión AC": 74,
+      "Ingreso del Paciente": 38,
+      "En gestión AC": 70,
+      "Visita Programada": 1,
       "Randomizado": 1,
-      "Contactado por el Investigador": 1,
-      "Visita Programada": 1
+      "Contactado por el Investigador": 1
     },
-    "total_backlog": 37,
-    "total_wip": 76,
-    "gina_hoy": 6,
-    "gina_total": 332,
-    "gina_perdidos": 118,
-    "gina_gestionados": 178,
+    "total_backlog": 38,
+    "total_wip": 72,
+    "gina_hoy": 0,
+    "gina_total": 334,
+    "gina_perdidos": 122,
+    "gina_gestionados": 176,
     "avg_days_process": 9.4,
     "oldest_ingreso": "2026-07-10",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -2464,10 +2462,10 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
-        0,
         0,
         0,
         5,
@@ -2481,28 +2479,28 @@ window.DASHBOARD_DATA = [
         25,
         28,
         34,
-        37
+        38,
+        38
       ],
       "wip": [
-        61,
-        69,
-        74,
-        71,
+        67,
         72,
-        78,
-        77,
-        78,
-        78,
-        77,
-        68,
-        74,
-        78,
+        69,
+        70,
         76,
-        76
+        76,
+        75,
+        75,
+        74,
+        65,
+        71,
+        75,
+        73,
+        72,
+        72
       ],
       "ingresos": [
-        8,
-        13,
+        12,
         5,
         5,
         6,
@@ -2515,7 +2513,8 @@ window.DASHBOARD_DATA = [
         10,
         9,
         9,
-        4
+        4,
+        0
       ]
     }
   },
@@ -2534,11 +2533,10 @@ window.DASHBOARD_DATA = [
     "gina_total": 0,
     "gina_perdidos": 0,
     "gina_gestionados": 0,
-    "avg_days_process": 4,
+    "avg_days_process": 3.9,
     "oldest_ingreso": null,
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -2552,7 +2550,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
@@ -2572,7 +2571,7 @@ window.DASHBOARD_DATA = [
         0
       ],
       "wip": [
-        2,
+        1,
         1,
         1,
         1,
@@ -2623,20 +2622,19 @@ window.DASHBOARD_DATA = [
     "fte_persons": 1.5,
     "ingresos_hoy": 0,
     "backlog": {
-      "Ingreso del Paciente": 155,
-      "En gestión AC": 78
+      "Ingreso del Paciente": 158,
+      "En gestión AC": 79
     },
-    "total_backlog": 155,
-    "total_wip": 78,
+    "total_backlog": 158,
+    "total_wip": 79,
     "gina_hoy": 0,
     "gina_total": 0,
     "gina_perdidos": 0,
     "gina_gestionados": 0,
-    "avg_days_process": 6.2,
+    "avg_days_process": 6.3,
     "oldest_ingreso": "2026-07-09",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -2650,41 +2648,42 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         0,
-        0,
-        20,
-        44,
-        63,
-        78,
-        103,
-        123,
-        144,
-        154,
-        154,
-        154,
-        154,
-        154,
-        155
+        19,
+        45,
+        65,
+        80,
+        107,
+        126,
+        145,
+        155,
+        155,
+        155,
+        155,
+        155,
+        157,
+        158
       ],
       "wip": [
-        97,
-        133,
-        153,
-        157,
-        163,
-        177,
-        177,
-        161,
-        147,
-        143,
-        136,
-        138,
-        138,
-        111,
-        78
+        134,
+        156,
+        160,
+        166,
+        179,
+        179,
+        164,
+        150,
+        148,
+        142,
+        144,
+        144,
+        116,
+        79,
+        79
       ],
       "ingresos": [
         0,
@@ -2718,11 +2717,10 @@ window.DASHBOARD_DATA = [
     "ingresos_hoy": 0,
     "backlog": {
       "Ingreso del Paciente": 15,
-      "Randomizado": 6,
       "Visita Cumplida": 6,
+      "Randomizado": 6,
       "Contactado por el Investigador": 2,
-      "Consentimiento Firmado": 1,
-      "En gestión AC": 1
+      "En gestión AC": 2
     },
     "total_backlog": 15,
     "total_wip": 10,
@@ -2734,7 +2732,6 @@ window.DASHBOARD_DATA = [
     "oldest_ingreso": "2026-02-19",
     "trend": {
       "dates": [
-        "2026-07-07",
         "2026-07-08",
         "2026-07-09",
         "2026-07-10",
@@ -2748,7 +2745,8 @@ window.DASHBOARD_DATA = [
         "2026-07-18",
         "2026-07-19",
         "2026-07-20",
-        "2026-07-21"
+        "2026-07-21",
+        "2026-07-22"
       ],
       "backlogs": [
         14,
@@ -2760,7 +2758,7 @@ window.DASHBOARD_DATA = [
         14,
         14,
         14,
-        14,
+        15,
         15,
         15,
         15,
@@ -2768,7 +2766,6 @@ window.DASHBOARD_DATA = [
         15
       ],
       "wip": [
-        28,
         23,
         21,
         20,
@@ -2782,6 +2779,7 @@ window.DASHBOARD_DATA = [
         13,
         13,
         13,
+        10,
         10
       ],
       "ingresos": [
@@ -2804,4 +2802,4 @@ window.DASHBOARD_DATA = [
     }
   }
 ];
-window.LAST_UPDATED = "21/07/2026 20:10";
+window.LAST_UPDATED = "22/07/2026 05:10";
